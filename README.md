@@ -1,7 +1,7 @@
 # Travel Blog
 
 ## Objective
-The goal for this project is to build a Travel Blog with HTML, CSS, and JS / React.
+The goal for this project is to build a Travel Blog with HTML, CSS, and JS / React. ✅ DONE ✅
 
 ## Features
 ### Homepage
