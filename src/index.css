@@ -38,31 +38,75 @@ a:hover {
     transition: all ease-in-out 0.3s;
 }
 
-/* navbar */
-
-.header {
-    background-color: #282828;
-    color: white;
+.nav__links a,
+.nav__mobile--links a {
+    display: block;
+    padding: 1rem;
 }
 
-.header .container {
+/* navbar */
+
+header {
+    background-color: #282828;
+    padding: .25rem 1.5rem;
+}
+
+.wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.title__link {
+nav,
+.title__link,
+.nav__links {
     display: flex;
+}
+
+.title__link {
     gap: 1rem;
 }
 
 .nav {
+    display: none;
+    align-items: center;
+}
+
+.nav__mobile--links {
+    display: none;
+}
+
+.nav__links,
+.nav__mobile--links {
+    list-style-type: none;
+    font-weight: 100;
+}
+
+/* hamburguer menu */
+
+.nav__mobile,
+.nav__mobile--open {
     display: flex;
     align-items: center;
 }
 
-.nav__links {
-    display: flex;
-    gap: 1rem;
-    list-style-type: none;
-    font-weight: 100;
+.nav__mobile--btn {
+    background-color: transparent;
+    border: none;
+    color: #0052cc; /* subject to change */
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.nav__mobile--open {
+    flex-direction: column;
+}
+
+@media screen and (min-width: 991px) {
+    .nav__mobile,
+    .nav__mobile--open {
+        display: none;
+    }
+    .nav {
+        display: flex;
+    }
 }
