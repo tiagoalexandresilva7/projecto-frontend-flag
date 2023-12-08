@@ -1,3 +1,5 @@
+[Deployed on Netlify](https://travelling-projectified.netlify.app/)
+
 # Travel Blog
 
 ## Objective
