@@ -5,7 +5,7 @@ function App() {
         <div className="container">
           <div className="title">
             <a href="/" className="title__link">
-              <img src="../public/logo.svg" alt="logo" />
+              <img src="/logo.svg" alt="logo" />
               <h1>Travelling <em>Projectified</em></h1>
             </a>
           </div>
