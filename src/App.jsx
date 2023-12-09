@@ -67,10 +67,12 @@ function App() {
       <div className="container hero">
 
         <div className="hero__text">
-          <h3 className="heroText">The World is <em>our</em> playground</h3>       
+          <p className="heroText">The World is <em>our</em> playground...</p>       
         </div>
 
       </div>
+
+      <hr className="container spacer"></hr>
 
     </>
   )
