@@ -14,7 +14,8 @@
     max-width: 1140px;
 }
 
-body, ul {
+body,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -29,11 +30,13 @@ svg {
 
 a {
     text-decoration: none;
-    color: #3385ff; /* subject to change */
+    color: #3385ff;
+    /* subject to change */
 }
 
 a:hover {
-    color: #0052cc; /* subject to change */
+    color: #0052cc;
+    /* subject to change */
     transition: all ease-in-out 0.3s;
 }
 
@@ -95,13 +98,16 @@ nav,
 .nav__mobile--btn {
     background-color: transparent;
     border: none;
-    color: #3385ff; /* subject to change */
+    color: #3385ff;
+    /* subject to change */
     cursor: pointer;
     font-size: xx-large;
+    width: 2rem;
 }
 
 .nav__mobile--btn:hover {
-    color: #0052cc; /* subject to change */
+    color: #0052cc;
+    /* subject to change */
     transition: all ease-in-out 0.3s;
 }
 
@@ -110,11 +116,38 @@ nav,
 }
 
 @media screen and (min-width: 991px) {
+
     .nav__mobile,
     .nav__mobile--open {
         display: none;
     }
+
     .nav {
         display: flex;
     }
+}
+
+/* hero */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("https://cdn.mos.cms.futurecdn.net/fEiiAFCszqW8THGArcpAG4-1200-80.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 2rem auto;
+    width: 100%;
+    height: 350px;
+    position: relative; 
+    border-radius: 1rem;
+    box-shadow: 1rem 1.5rem 5rem black;
+}
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #3385ff;
+    white-space: nowrap;
 }
