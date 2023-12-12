@@ -1,81 +1,34 @@
-import ToggleMobileMenu from "./components/ToggleMobileMenu"
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Card from "./components/Card";
+import Footer from "./Footer";
 
 function App() {
   return (
     <>
       <header>
-
-        <div className="container wrapper">
-
-          <div className="logoTitleContainer__logo">
-            <a href="/" className="title__link">
-              <img src="/logo.svg" alt="logo" />
-            </a>
-          </div>
-
-          <div className="logoTitleContainer__title">
-            <a href="/" className="title__link">
-              <h1>Travelling <em>Projectified</em></h1>
-            </a>
-          </div>
-
-          <div className="nav">
-
-            <nav>
-
-              <ul className="nav__links">
-                <li>
-                  <a href="/"><i className="fa-solid fa-house-flag"></i> Home</a>
-                </li>
-                <li>
-                  <a href="/addlocation"><i className="fa-solid fa-map-location-dot"></i> Travel to...</a>
-                </li>
-                <li>
-                  <a href="/about"><i className="fa-solid fa-user-astronaut"></i> About the Tourist</a>
-                </li>
-              </ul>
-
-            </nav>
-
-          </div>
-
-
-          <div className="nav__mobile">
-            <button onClick={ToggleMobileMenu} className="nav__mobile--btn"><i className="burguerIcon fa-solid fa-bars"></i></button>
-          </div>
-
-        </div>
-
-        <div>
-
-          <ul className="nav__mobile--links">
-            <li>
-              <a href="/"><i className="fa-solid fa-house-flag"></i> Home</a>
-            </li>
-            <li>
-              <a href="/addlocation"><i className="fa-solid fa-map-location-dot"></i> Travel to...</a>
-            </li>
-            <li>
-              <a href="/about"><i className="fa-solid fa-user-astronaut"></i> About the Tourist</a>
-            </li>
-          </ul>
-
-        </div>
-
+        <nav className="container mx-auto">
+          <Navbar />
+        </nav>
       </header>
-
-      <div className="container hero">
-
-        <div className="hero__text">
-          <p className="heroText">The World is <em>our</em> playground...</p>       
+      <main>
+        <div className="container mx-auto px-4 pt-4 pb-6">
+          <Hero />
         </div>
-
-      </div>
-
-      <hr className="container spacer"></hr>
-
+        <div className="container mx-auto grid justify-items-center gap-10 px-4 pt-2 pb-5 md:grid-cols-2 lg:grid-cols-3">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </main>
+      <footer className="container mx-auto p-4">
+        <Footer />
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
