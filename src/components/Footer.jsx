@@ -5,17 +5,17 @@ function Footer() {
         <ul className="flex place-content-center items-center gap-1 ">
           <li className="md:hover:scale-105 md:hover:transition-all md:hover:duration-300">
             <a className="p-4" href="">
-              <i class="fa-solid fa-copyright"></i> Copyright
+              <i className="fa-solid fa-copyright"></i> Copyright
             </a>
           </li>
           <li className="md:hover:scale-105 md:hover:transition-all md:hover:duration-300">
             <a className="p-4" href="">
-              <i class="fa-solid fa-square-phone"></i> Contacts
+              <i className="fa-solid fa-square-phone"></i> Contacts
             </a>
           </li>
           <li className="md:hover:scale-105 md:hover:transition-all md:hover:duration-300">
             <a className="p-4" href="">
-              <i class="fa-solid fa-square-share-nodes"></i> Social Media
+              <i className="fa-solid fa-square-share-nodes"></i> Social Media
             </a>
           </li>
         </ul>
