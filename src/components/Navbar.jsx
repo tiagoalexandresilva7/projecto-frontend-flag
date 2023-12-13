@@ -22,16 +22,17 @@ function Navbar() {
 
   return (
     <>
-      <div className="m-4 flex place-content-around items-center gap-1 text-blue-600">
+      {/* logo and page title */}
+      <div className="flex place-content-around items-center gap-1 p-4 text-blue-600">
         <ul>
-          <li>
+          <li className="p-2 hover:cursor-pointer">
             <Link href="/">
               <img className="min-w-min" src="\logo.svg" alt="logo" />
             </Link>
           </li>
         </ul>
         <ul>
-          <li>
+          <li className="p-2 hover:cursor-pointer">
             <Link href="/">
               <h1 className="whitespace-nowrap text-2xl">
                 <strong>
@@ -44,7 +45,7 @@ function Navbar() {
 
         {/* mobile menu */}
         <ul className="flex gap-1 md:hidden">
-          <li className="hover:cursor-pointer">
+          <li className="hover:scale-110 hover:cursor-pointer hover:transition-all hover:duration-300">
             <button className="w-6">
               <i
                 className="fa-solid fa-bars p-1 text-3xl"
@@ -74,22 +75,23 @@ function Navbar() {
           </li>
         </ul>
       </div>
+
       {/* mobile menu links */}
       <ul
         className="hidden flex-col items-center gap-2 text-blue-600 md:hidden"
         ref={mobileMenu}
       >
-        <li>
+        <li className="hover:scale-105 hover:transition-all hover:duration-300">
           <Link href="/">
             <i className="fa-solid fa-house-flag"></i> Home
           </Link>
         </li>
-        <li>
+        <li className="hover:scale-105 hover:transition-all hover:duration-300">
           <Link href="/travelto">
             <i className="fa-solid fa-map-location-dot"></i> Travel to...
           </Link>
         </li>
-        <li>
+        <li className="hover:scale-105 hover:transition-all hover:duration-300">
           <Link href="/about">
             <i className="fa-solid fa-user-astronaut"></i> About the Tourist
           </Link>

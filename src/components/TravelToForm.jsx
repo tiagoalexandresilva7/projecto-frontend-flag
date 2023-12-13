@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function TravelToForm() {
-
   // works as project guideline says
   // intend to add:
   // disabled submit button while submitting
@@ -15,7 +14,7 @@ function TravelToForm() {
   function submitHandler(event) {
     event.preventDefault();
     const submittedFormData = { name, city, date, message };
-    console.log(submittedFormData); //
+    console.log(submittedFormData);
   }
 
   function inputHandler(event) {
@@ -32,10 +31,14 @@ function TravelToForm() {
 
   return (
     <>
+      <h2 className="pb-4 text-center text-2xl text-blue-600">
+        Fill out the form and tell me where you want me to travel!
+      </h2>
+
       <div className="flex justify-center text-xl text-blue-600">
         <form
           onSubmit={submitHandler}
-          className="flex flex-col gap-4 rounded-2xl border p-4 shadow-md"
+          className="flex flex-col gap-4 rounded-2xl border border-blue-600 p-4 shadow-md"
         >
           <div className="flex flex-col">
             <label htmlFor="name">What's your name?</label>
