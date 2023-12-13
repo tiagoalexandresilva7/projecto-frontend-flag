@@ -1,23 +1,19 @@
 import { useRef, useState } from "react";
 import { Link } from "wouter";
 
-/* bug first click on each page refresh does not open mobile menu */
-
 function Navbar() {
   const mobileMenu = useRef();
   const mobileMenuIcon = useRef();
-  const [mobileMenuToggle, setmobileMenuToggle] = useState(false);
+  const [isMobileMenuHidden, setIsMobileMenuHidden] = useState(true);
 
   function mobileMenuHandler() {
-    setmobileMenuToggle(!mobileMenuToggle);
+    setIsMobileMenuHidden(!isMobileMenuHidden);
 
-    mobileMenuToggle
+    isMobileMenuHidden
       ? mobileMenu.current.classList.replace("hidden", "flex") &&
         mobileMenuIcon.current.classList.replace("fa-bars", "fa-xmark")
       : mobileMenu.current.classList.replace("flex", "hidden") &&
         mobileMenuIcon.current.classList.replace("fa-xmark", "fa-bars");
-
-    console.log(mobileMenuToggle);
   }
 
   return (
