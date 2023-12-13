@@ -5,6 +5,7 @@ import AboutView from "./views/AboutView";
 import CopyrightView from "./views/CopyrightView";
 import ContactsView from "./views/ContactsView";
 import Error404View from "./views/Error404View";
+import DetailedCardView from "./views/DetailedCardView";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" component={AboutView} />
         <Route path="/copyright" component={CopyrightView} />
         <Route path="/contacts" component={ContactsView} />
+        <Route path="/trip" component={DetailedCardView} />
         <Route component={Error404View} />
       </Switch>
     </>

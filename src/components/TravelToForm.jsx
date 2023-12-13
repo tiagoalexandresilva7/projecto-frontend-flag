@@ -31,14 +31,14 @@ function TravelToForm() {
 
   return (
     <>
-      <h2 className="pb-4 text-center text-2xl text-blue-600">
+      <h2 className="pb-6 text-center text-2xl font-bold text-blue-600">
         Fill out the form and tell me where you want me to travel!
       </h2>
 
-      <div className="flex justify-center text-xl text-blue-600">
+      <div className="flex justify-center text-xl">
         <form
           onSubmit={submitHandler}
-          className="flex flex-col gap-4 rounded-2xl border border-blue-600 p-4 shadow-md"
+          className="flex flex-col gap-4 rounded-2xl p-4 shadow-xl text-center"
         >
           <div className="flex flex-col">
             <label htmlFor="name">What's your name?</label>
@@ -47,7 +47,8 @@ function TravelToForm() {
               id="name"
               value={name}
               onChange={inputHandler}
-              className="rounded-md border border-blue-600"
+              placeholder="Tiago"
+              className="rounded-full bg-blue-50 p-2 text-center"
             ></input>
           </div>
           <div className="flex flex-col">
@@ -57,30 +58,30 @@ function TravelToForm() {
               id="city"
               value={city}
               onChange={inputHandler}
-              className="rounded-md border border-blue-600"
+              placeholder="City"
+              className="rounded-full bg-blue-50 p-2 text-center"
             ></input>
           </div>
           <div className="flex flex-col">
-            <label htmlFor="date">Best time to go?</label>
+            <label htmlFor="date">And when?</label>
             <input
               type="date"
               id="date"
               value={date}
               onChange={inputHandler}
-              className="rounded-md border border-blue-600"
+              className="rounded-full bg-blue-50 p-2 text-center text-slate-400"
             ></input>
           </div>
           <div className="flex flex-col">
-            <label htmlFor="message">
-              Points of interest and other suggestions?
-            </label>
+            <label htmlFor="message">Any particular point of interest?</label>
             <textarea
               id="message"
               value={message}
               onChange={inputHandler}
-              rows="10"
+              rows="7"
               cols="30"
-              className="rounded-md border border-blue-600"
+              placeholder="Type here..."
+              className="rounded-3xl bg-blue-50 p-2 text-center"
             ></textarea>
           </div>
           <button className="w-full rounded-full bg-blue-600 p-2 text-xl  text-white hover:transition-all hover:duration-300 hover:ease-in-out md:hover:shadow-xl lg:text-2xl">

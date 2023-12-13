@@ -2,15 +2,21 @@ function Error404() {
   return (
     <>
       <div className="p-4">
-        <h2 className="text-2xl text-blue-600 text-center">That's where you want to go?</h2>
-        <h2 className="pb-4 text-2xl text-blue-600 text-center">A black hole?</h2>
+        <h2 className="text-center text-2xl text-blue-600">
+          That's where you want to go?
+        </h2>
+        <h2 className="pb-4 text-center text-2xl text-blue-600">
+          Into a black hole?
+        </h2>
         <p className="text-xl sm:text-center">
           I would turn around if I were you. No one in their right mind would
           want to go into a black hole and return.
         </p>
         <br />
         <p className="text-xl sm:text-center">Except Matthew McConaughey.</p>
-        <p className="pb-6 text-xl sm:text-center">And more importantly... his camera man.</p>
+        <p className="pb-6 text-xl sm:text-center">
+          And more importantly... his camera man.
+        </p>
       </div>
       <div className="p-4">
         <img
@@ -24,4 +30,3 @@ function Error404() {
 }
 
 export default Error404;
-/* flex flex-col items-center */
