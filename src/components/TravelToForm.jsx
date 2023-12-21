@@ -38,7 +38,7 @@ function TravelToForm() {
       <div className="flex justify-center text-xl">
         <form
           onSubmit={submitHandler}
-          className="flex flex-col gap-4 rounded-2xl p-4 shadow-xl text-center"
+          className="flex flex-col gap-4 rounded-2xl p-4 text-center shadow-xl"
         >
           <div className="flex flex-col">
             <label htmlFor="name">What's your name?</label>
@@ -62,7 +62,7 @@ function TravelToForm() {
               className="rounded-full bg-blue-50 p-2 text-center"
             ></input>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             <label htmlFor="date">And when?</label>
             <input
               type="date"

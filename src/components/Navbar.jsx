@@ -30,7 +30,7 @@ function Navbar() {
         <ul>
           <li className="p-2 hover:cursor-pointer">
             <Link href="/">
-              <h1 className="whitespace-nowrap text-2xl">
+              <h1 className="text-2xl">
                 <strong>
                   Travelling <span className="italic">Projectified</span>
                 </strong>
@@ -44,7 +44,7 @@ function Navbar() {
           <li className="hover:scale-110 hover:cursor-pointer hover:transition-all hover:duration-300">
             <button className="w-6">
               <i
-                className="fa-solid fa-bars p-1 text-3xl"
+                className="fa-solid fa-bars text-3xl"
                 onClick={mobileMenuHandler}
                 ref={mobileMenuIcon}
               ></i>
