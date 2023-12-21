@@ -1,17 +1,9 @@
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Card from "../components/Card";
-import Footer from "../components/Footer";
 
 function HomepageView() {
   return (
     <>
-      <header>
-        <nav className="container mx-auto">
-          <Navbar />
-        </nav>
-      </header>
-
       <main>
         <div className="container mx-auto px-4 pb-6 pt-4">
           <Hero />
@@ -25,10 +17,6 @@ function HomepageView() {
           <Card />
         </div>
       </main>
-
-      <footer className="container mx-auto p-4">
-        <Footer />
-      </footer>
     </>
   );
 }

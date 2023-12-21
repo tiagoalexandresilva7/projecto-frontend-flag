@@ -6,10 +6,13 @@ import CopyrightView from "./views/CopyrightView";
 import ContactsView from "./views/ContactsView";
 import Error404View from "./views/Error404View";
 import DetailedCardView from "./views/DetailedCardView";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
+    <Navbar />
       <Switch>
         <Route path="/" component={HomepageView} />
         <Route path="/travelto" component={TravelToView} />
@@ -19,6 +22,7 @@ function App() {
         <Route path="/trip" component={DetailedCardView} />
         <Route component={Error404View} />
       </Switch>
+      <Footer />
     </>
   );
 }
