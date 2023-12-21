@@ -20,7 +20,7 @@ function DetailedCard() {
           className="rounded-3xl mx-auto"
         />
       </div>
-      <div className="xl:flex xl:gap-1">
+      <div className="xl:flex xl:gap-8">
         <div className="pb-6">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur

@@ -17,13 +17,15 @@ function WeatherWidget() {
     <>
       <div className="mx-auto shadow-lg">
         <div>
-          <ul className="flex items-center justify-around">
+          <ul className="flex items-center justify-around xl:flex-col xl:p-5 xl:gap-3">
             <li className="flex items-center">
               <img
                 src={cityData.icon}
                 alt={cityData.weather?.list[0].weather[0].main}
                 width="75px"
               />
+            </li>
+            <li>
               <div>
                 <h3 className="text-xl font-bold">
                   {cityData.weather?.list[0].weather[0].main}
