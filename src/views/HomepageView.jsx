@@ -1,21 +1,28 @@
 import Hero from "../components/Hero";
 import Card from "../components/Card";
+import file from "../components/apiobjs/data.json";
+import { useState, useEffect } from "react";
 
 function HomepageView() {
+  const [data, setData] = useState([]);
+
+  useEffect(function () {
+    setData(file);
+  }, []);
+
   return (
     <>
-      <main>
+      <main className="shadow-inner">
         <div className="container mx-auto px-4 pb-6 pt-4">
           <Hero />
         </div>
-        <div className="container mx-auto grid justify-items-center gap-10 px-4 pb-5 pt-2 md:grid-cols-2 lg:grid-cols-3">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
+        <ul className="container mx-auto grid justify-items-center gap-10 px-4 pb-5 pt-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {data.map((item) => (
+            <li key={item.name}>
+              <Card trip={item} />
+            </li>
+          ))}
+        </ul>
       </main>
     </>
   );

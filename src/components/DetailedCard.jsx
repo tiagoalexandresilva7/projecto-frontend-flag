@@ -1,54 +1,44 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Slideshow from "./Slideshow";
 import WeatherWidget from "./WeatherWidget";
+import file from "./apiobjs/data.json";
 
-function DetailedCard() {
+function DetailedCard({ id }) {
+  const [trip, setTrip] = useState({});
 
-  const [slideNumber, setSlideNumber] = useState(1)
+  useEffect(function () {
+    (async function () {
+      /* const url = "./apiobjs/data.json";
+      const response = await fetch(url)
+      const result = await response.json() */
+
+      const foundTrip = file.find((trip) => {
+        return trip.id == id;
+      });
+
+      setTrip(foundTrip);
+    })();
+  }, []);
 
   return (
     <>
-      <div className="pb-4 text-center text-2xl text-blue-600 font-semibold">
-        <h2>Lisbon</h2>
-        <h3>01-01-2023</h3>
+      <div className="pb-4 text-center text-2xl font-semibold text-blue-600">
+        <h2>{trip.name}</h2>
+        <h3>{trip.date}</h3>
       </div>
-      <Slideshow/>
+      <Slideshow images={trip.imageGallery} alt={trip.name}/>
       <div className="pb-4">
         <img
           src="https://i.redd.it/k1uzwu8wwuv01.png"
           alt="map placeholder"
-          className="rounded-3xl mx-auto"
+          className="mx-auto rounded-3xl"
         />
       </div>
       <div className="xl:flex xl:gap-8">
         <div className="pb-6">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            ipsa assumenda esse fugiat et minima, quo iusto optio porro nesciunt
-            natus aperiam tenetur fuga quidem rem harum error, molestias
-            accusantium.
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            sint explicabo consectetur facilis, fugiat doloremque molestias
-            temporibus accusamus, mollitia ad omnis ab voluptatum neque, iste
-            fuga corporis qui error quos!
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            sint explicabo consectetur facilis, fugiat doloremque molestias
-            temporibus accusamus, mollitia ad omnis ab voluptatum neque, iste
-            fuga corporis qui error quos!
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            sint explicabo consectetur facilis, fugiat doloremque molestias
-            temporibus accusamus, mollitia ad omnis ab voluptatum neque, iste
-            fuga corporis qui error quos!
-          </p>
+          <p>{trip.description}</p>
+          <br></br>
+          <p>{trip.bestTimeToGo}</p>
         </div>
         <WeatherWidget />
       </div>

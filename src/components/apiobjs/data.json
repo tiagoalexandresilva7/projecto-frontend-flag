@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "name": "Lisbon, PRT",
+    "dateDeparture": "01/01/2023",
+    "dateArrival": "10/01/2023",
+    "cardPreview": "https://es.homeexchange.com/es/blog/content/images/2019/02/GettyImages-698004898.jpg",
+    "imageGallery": [
+      "https://handluggageonly.co.uk/wp-content/uploads/2017/02/Parque-Eduardo-VII.jpg",
+      "https://i.pinimg.com/originals/78/02/cc/7802ccb2847900a05fb91c9248477cfd.jpg",
+      "https://1.bp.blogspot.com/-LxlYcvtPDkM/UTDG0sN9f1I/AAAAAAAAA2Y/mnklmuNv21k/s1600/lisboa1.jpg",
+      "https://cdn.getyourguide.com/img/location/54d8c4646ea4f.jpeg/88.jpg",
+      "https://i1.wp.com/www.vortexmag.net/wp-content/uploads/2017/02/10679811_767464743300761_995802487320414038_o.jpg"
+    ],
+    "description": "Lisbon is arguably Western Europe's most underrated capital city. It's also one of the continent's oldest. First founded as a trading port city in 1200 B.C., Lisbon pre-dates Rome. Most of the old city was destroyed in an earthquake in 1755. But today, the \"City of Light\" is thriving. In the last 50 years its population and annual visitors have more than doubled as the rest of the world discovers what this second city on seven hills has to offer.Indeed, Lisbon checks all the boxes. It's home to colonial architecture, destination museums, and even its own genre of music. Hop on an iconic yellow tram and explore a fortified castle, a bustling waterfront, or a colorful maze of cobblestone streets. There's fun food – think themed trucks and even cereal bars – and fine food – five Michelin-star restaurants. At night, retire to a funky hostel, beautiful boutique property, or a 16th Century five-star hotel.",
+    "bestTimeToGo": "Lisbon is a shoulder season destination. The best time to visit is in the spring, March to May, or fall, September to November, when the weather is pleasant. During the winter months, it's often cloudy or raining, and the city can feel like a ghost town. During the summer, peak tourist season, temperatures can be uncomfortably hot, crowds are common, and it can be hard to find accommodations (plus rates are higher). However, you'll definitely want to visit mid-June if festivals are your thing. Sunday, June 13 is St. Anthony's Day – Lisbon's most beloved holiday and an entire night filled with parades, dancing, and plenty of grilled sardines.",
+    "source": "https://www.travelandleisure.com/travel-guide/lisbon"
+  },
+  {
+    "id": 2,
+    "name": "Tulum, MEX",
+    "dateDeparture": "01/02/2023",
+    "dateArrival": "10/02/2023",
+    "cardPreview": "https://magazine.velasresorts.com/wp-content/uploads/2020/07/Tulum-aerea.jpg",
+    "imageGallery": [
+      "https://www.cataloniahotels.com/es/blog/wp-content/uploads/2020/01/tulum-ruinas-1920x1239.jpg",
+      "https://pelicanoproperties.mx/wp-content/uploads/2018/10/Tulum-yucatan-paya-del-carmen-riviera-maya.jpg",
+      "https://cdn.urlaubsguru.at/wp-content/uploads/2019/03/tulum_mexiko_260521358.jpg",
+      "https://digestley.com/wp-content/uploads/2021/07/How-to-get-from-Cancun-to-Tulum.-1.jpg",
+      "https://media.hearstapps.com/hmg-prod/images/azulik-hotel-maya-spa-tulum-2-1550091034.jpg"
+    ],
+    "tripDescription": "Tulum, Mexico, is bursting with beautifully designed hotels, gorgeous beaches, and restaurants with great ambiance and even better food. It's part of Mexico's Riviera Maya, which was one of Travel + Leisure's best places to go in 2023. Humming blissfully in the background of the busy beach clubs and posing influencers, Tulum's spiritual centers offers great yoga, meditation classes, sacred ceremonies, and many more mind-expanding activities. Surrounding all this is a dense cenote-filled jungle and stunning nature reserves — perfect for dolphin spotting, cave diving, and riding ATVs.",
+    "bestTimeToGo": "The best time to visit Tulum is in the fall, between late October and mid-December, when hotel rates and reasonable, temperatures are starting to drop, and there's minimal sargasso seaweed crowding the beaches. Winter in Tulum is high season, so while the weather is pleasant, hotel rates tend to skyrocket, especially around Christmas and New Year's. From May to October, Tulum, like the rest of the Caribbean, suffers from the hard-to-manage quantities of seaweed. If you can plan your travels around a specific time of the month, consider visiting during the lunar cycle. Full moon parties are extremely popular in Tulum. Around this time, many spiritual centers and beach clubs host special moonlit events where visitors gather for either a dance party on the beach or a spiritual cleansing in the jungle.",
+    "source": "https://www.travelandleisure.com/travel-guide/tulum"
+  },
+  {
+    "id": 3,
+    "name": "Tokyo, JPN",
+    "dateDeparture": "01/03/2023",
+    "dateArrival": "10/03/2023",
+    "cardPreview": "https://www.wallpaperup.com/uploads/wallpapers/2014/12/04/539703/8732bdb30b4bb5efb0fe574c12a2cf22.jpg",
+    "imageGallery": [
+      "https://cdn.audleytravel.com/-/-/79/085193144017004149152097203190050251049181136035.jpg",
+      "https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15da96c49484.64193252.jpeg",
+      "https://savvytokyo.scdn3.secure.raxcdn.com/app/uploads/2019/12/A-Guide-to-Asakusa-Neighborhood-Strolls.jpg",
+      "https://images.mnstatic.com/78/3c/783c339d80fa16877b2027bbb6d6fdc0.jpg",
+      "https://old-tokyo.info/wp-content/uploads/2018/03/group-near-fujimiyagura2-1200x675.jpg"
+    ],
+    "tripDescription": "Tokyo is a city of surprises — ancient temples are nestled among modern skyscrapers and you're just as likely to see someone wearing a cosplay costume as you are to see someone dressed in a traditional kimono. And even though Tokyo is the most populated city in the world, the streets can be almost eerily silent. You'll find every modern convenience (and then some), but because Japan was closed off to the rest of the world for many years, tech evolved in a way that reflects the Japanese psyche, English is not widely spoken, and the far-reaching effect of globalization is still minimal. It is a true breath of fresh air among the myriad destinations that lost themselves in their quest to cater to tourists and meet global ideals. These contradictions and surprises make Tokyo a city that leaves you curious, fascinated, and wanting more. In a single day you can visit a 7th-century temple, order ramen from a vending machine, and watch a sumo match. There is no shortage of things to do, see, and eat in Tokyo, and while its citizens tend to be respectful and accommodating, they too, like to keep you on your toes. Swing by a maid cafe or a Babymetal concert and you'll know what I mean. ",
+    "bestTimeToGo": "The best time to visit Tokyo is in the spring, when the cherry blossoms bloom (typically March to April) and in the autumn, when the weather cools and the fall colors pop (between September and November). That being said, the weather in Tokyo is fairly temperate — even in the winter — although it can be hot and humid from late June to the end of August.",
+    "source": "https://www.travelandleisure.com/travel-guide/tokyo"
+  },
+  {
+    "id": 4,
+    "name": "Chicago, USA",
+    "dateDeparture": "01/04/2023",
+    "dateArrival": "10/04/2023",
+    "cardPreview": "https://media.timeout.com/images/103170852/image.jpg",
+    "imageGallery": [
+      "https://i.pinimg.com/originals/a5/d9/80/a5d980171eefc7553477d2a494a54e3c.jpg",
+      "https://www.pixelstalk.net/wp-content/uploads/2016/08/Desktop-Chicago-Backgrounds.jpg",
+      "https://s3.amazonaws.com/si-interactive/prod/ai-cio-com/wp-content/uploads/2018/02/09095443/iStock-840497322.jpg",
+      "https://www.viaggiareusa.it/wp-content/uploads/2013/05/chicago.jpg",
+      "https://content.tripster.com/travelguide/wp-content/uploads/2019/03/rsz_chicago_gettyimages-1077944822.jpg"
+    ],
+    "tripDescription": "Chicago isn't just Frank Sinatra's kind of town, it's the kind of town that's got something for everyone. It's a big city that's not quite as crowded and fast-paced as New York but still filled with more things to do than you'll have time. Chicago is home to more than 2.7 million people, making it the third largest city in the U.S. and the largest city in the midwest. It's lined with urban beaches located along Lake Michigan and is known as the birthplace of the modern skyscraper. A massive fire in 1871 destroyed much of the city center, leaving behind just a handful of structures and paving the way for Chicago to construct one of America's tallest and most beautiful skylines. With professional baseball, basketball, football, hockey, and soccer teams, Chicago is a sports aficianado's dream come true. Catch a Chicago Bears game at Soldier Field. If football isn't for you, catch a Cubs or White Sox ball game, a round of soccer with the Chicago Fire, the Bulls for a basketball game, or a Blackhawks game for hockey fans. Chicago isn't just about sports, though. It's also a foodie paradise with world-class museums, architectural gems, luxury shopping, and a long list of live music venues and comedy clubs. It's a place where you're sure to find plenty of things to do — and eat. Just make sure you save room for deep dish pizza and a Chicago dog.",
+    "bestTimeToGo": "Chicago may have freezing winters, but the Windy City makes up for it with warm, sunny summer days filled with live music, neighborhood festivals, and bright blue skies. The best time to visit Chicago is between June and September when the city's urban beaches are at their best. Runners may want to wait until October when the city hosts the annual Chicago marathon. June brings the well-known Chicago Blues Festival while July brings the Taste of Chicago, an outdoor food festival that allows for sampling of several local favorites. Each August, Chicago hosts the Lollapalooza music festival, the Chicago Jazz Festival and the Chicago Air and Water Show. For travelers brave enough to face freezing temperatures, December brings the Christkindlmarket, a chance to lace up your skates and glide through iconic Grant Park at the Maggie Daley Ice Skating Ribbon and ample opportunities to view Christmas lights at the Lincoln Park Zoo and Navy Pier.",
+    "source": "https://www.travelandleisure.com/travel-guide/chicago"
+  },
+  {
+    "id": 5,
+    "name": "Dubai, ARE",
+    "dateDeparture": "01/05/2023",
+    "dateArrival": "10/05/2023",
+    "cardPreview": "https://i1.wp.com/viajetip.com/wp-content/uploads/2015/09/Dubai-City-Most-Popular-Attractions-Visit-1.jpg",
+    "imageGallery": [
+      "https://1.bp.blogspot.com/-YXoMYpSJ9hI/URZmGI9TE4I/AAAAAAAASv4/qVf34pQp2dQ/s1600/Dubai+Wallpapers+04.jpg",
+      "https://bonjourdubai.fr/wp-content/uploads/2020/05/que-faire-a-dubai.jpg",
+      "https://www.drtholidays.com/wp-content/uploads/2016/11/570dfb6f179a4371b418927ec7a03f41.jpg",
+      "https://www.travelrepublic.co.uk/blog/wp-content/uploads/2011/03/iStock-157604370.jpg",
+      "https://www.worldalldetails.com/article_image/dubai_burj_khalifa_089610.jpg"
+    ],
+    "tripDescription": "Dubai is full of contrasts. There's the glittering skyline of skyscrapers so tall they defy imagination. There is the modern collection of stores and eateries, offering every option a traveler could want. And then there are the luxurious hotels, ready to welcome even the most discerning traveler in style and excess. Then there's the desert with its rolling hills of sand stamped with the footprints of Arabian oryx and gazelles; the souks with their labyrinth of stalls, bins overflowing with a rainbow of spices; and the traditional abra boats ferrying riders across the Dubai Creek. 'Dubai is the ideal destination for tourists, and there are a number of reasons why,' Farida Ahmed, a guide and owner of Frying Pan Adventures, told Travel + Leisure. 'It is safe, whether you are traveling solo or as a family. That, for me, is one of the most pivotal points on which tourism rests.' The city, one of the seven emirates in the United Arab Emirates (UAE), has sprouted up from its desert port beginnings to become a sprawling metropolis full of vibrant neighborhoods, record-setting buildings, and over-the-top shopping centers all in the last several decades. 'There is something for everyone and everyone's pocket — if you’re looking for budget travel you can absolutely do it in Dubai,' said Ahmed. Today, Dubai can be fast and slow at the same time — a place to grab an avocado toast and relax on the beach, a place to appreciate a desert conservation reserve, and a place to shop 'til you drop, all in the same day. It's these contrasts that make Dubai one of the most dynamic and interesting cities in the world.",
+    "bestTimeToGo": "The best time to visit Dubai is during the winter when the year-round hot weather starts to cool. In general, temperatures start to dip in October and it remains only moderately hot through May. While the hot season is from June to September, it's worth noting that air conditioning is plentiful across Dubai.'The really amazing months for me are November to February,' said Ahmed, who noted that when winter arrives in Dubai, 'we literally crawl out of our hibernation phase and it's all about spending time at the beach and desert BBQs.' Winter is also when the Dubai Shopping Festival takes place. It's a December and January event that is known for its great deals, live entertainment, and raffles. ",
+    "source": "https://www.travelandleisure.com/travel-guide/dubai"
+  },
+  {
+    "id": 6,
+    "name": "London, GBR",
+    "dateDeparture": "01/06/2023",
+    "dateArrival": "10/06/2023",
+    "cardPreview": "https://wallpapercave.com/wp/gvG3hNZ.jpg",
+    "imageGallery": [
+      "https://www.watchmojo.com/uploads/thumbs720/T-D-London-Icons-1080p30.jpg",
+      "https://wallpaperaccess.com/full/2704296.jpg",
+      "https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-UK-England-London-533462679-TomasSereda-copy.jpg",
+      "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/20000/20541-The-West-End.jpg",
+      "https://www.londonkensingtonguide.com/wp-content/uploads/2020/10/harrods-london-shopping.jpg"
+    ],
+    "tripDescription": "Ah, London — home to world-class restaurants, an unparalleled music scene, fantastic hotels, and some seriously rich history. Plus, tea. Who could forget the tea? London is a beautiful city to visit, and with England's fantastic public transportation, it's a breeze to get from point A to point B. You could easily spend a week or more exploring all that each London neighborhood has to offer and still have things left over for your next visit. With sites and cultural hubs like the National Portrait Gallery, Trafalgar Square, the Tower of London, Tower Bridge, Kensington Gardens, and all manner of food, drink, shopping, history, and culture, it's no wonder why the 'Big Smoke' is a top travel destination.",
+    "bestTimeToGo": "England experiences relatively mild and somewhat rainy weather year-round, and when you should go depends on what you'd most like to experience. Spring, summer, and fall allow for taking in the parks and getting the most out of how walkable London is, while winter is beautiful and festive for those looking to get their fill of Christmas markets and traditional cheer.",
+    "source": "https://www.travelandleisure.com/travel-guide/london"
+  },
+  {
+    "id": 7,
+    "name": "Venice, ITA",
+    "dateDeparture": "01/07/2023",
+    "dateArrival": "10/07/2023",
+    "cardPreview": "https://www.fodors.com/wp-content/uploads/2019/11/HERO_Venice__FloatingCityBuilt_iStock-986940360.jpg",
+    "imageGallery": [
+      "https://media.architecturaldigest.com/photos/57d07a2304d9a6143e1952d0/master/pass/venice-travel-guide.jpg",
+      "https://www.tripsavvy.com/thmb/GPXhaN9Sf8GOMCY8S75-7O4Scbw=/3864x2577/filters:fill(auto,1)/blue-hour--rialto-bridge--venice--italy-523221747-59825d25685fbe00119965a2.jpg",
+      "https://www.thewowstyle.com/wp-content/uploads/2015/02/131216venice-italy-677483.jpg",
+      "https://legacy.travelnoire.com/wp-content/uploads/2018/10/venice-italy.jpg",
+      "https://cdn.audleytravel.com/3915/2797/79/1018537-gondolas-venice.jpg"
+    ],
+    "tripDescription": "Canals, gondolas, and the Rialto Bridge. You think you know what to expect from Venice, but it turns out that no photo, however digitally enhanced, can hold a candle to the real city. To get to know it, though, requires more than an afternoon. While the day-trippers are stampeding from the Rialto to St Mark's Square, you should be a block or two away, watching artisans craft items with Renaissance techniques, seeing shimmering reflections dancing on bridge arches, and gawking at marble-clad buildings each more fantastical than the next. The joy of Venice is getting lost, they say – although however far you amble, you're never more than a couple of churches away from a Titian or Tintoretto. Don't stick to the city, though – that getting lost should also be done in the lagoon, taking the vaporetto (ferry) to the beach-filled Lido, island of glass Murano, and, further out, Torcello and Burano, where Venice began 1600 years ago. You could spend a lifetime here and never do Venice justice. But with just a few days, it can touch your soul.",
+    "bestTimeToGo": "If you're wanting to escape the crowds, there's no better time than winter, when visitor numbers are at their lowest. But while there's a romance to it, Venice in winter with its biting cold, swirling fog, and frequent wind and rain certainly isn't the Venice of people's dreams. In summer, the city is crowded and hot – but it's also the perfect time to head to the beach on the Lido, or into the lagoon. Spring and fall tend to have the best of both worlds – go late March to mid April, Easter aside, and you should enjoy decent weather but not too many crowds. Christmas tends to be quiet but New Year is busy, and Carnival (roughly mid January to mid February) is packed.",
+    "source": "https://www.travelandleisure.com/travel-guide/venice"
+  },
+  {
+    "id": 8,
+    "name": "Rio de Janeiro, BRA",
+    "dateDeparture": "01/08/2023",
+    "dateArrival": "10/08/2023",
+    "cardPreview": "https://www.getsready.com/wp-content/uploads/2016/08/Rio-de-Janeiro-an-amazing-part-in-brazil.jpg",
+    "imageGallery": [
+      "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F592f4514-2e05-11e9-b50c-c6da8f614c54.jpg",
+      "https://www.readersdigest.ca/wp-content/uploads/2012/08/copacabana-scaled.jpg",
+      "https://wallpaperset.com/w/full/1/7/b/452809.jpg",
+      "https://reiseziele.plus/img/reiseziele/brasilien/rio-de-janeiro-nachts.jpg",
+      "https://www.costacruceros.com/content/dam/costa/inventory-assets/ports/RIO/c035_rio_de_janeiro.jpg"
+    ],
+    "tripDescription": "In Rio de Janeiro, every day is a party. Rio, as it's usually called, is a place like absolutely no other in the world. The jet set and glitterati descend here year-round for the white-sand beaches, bass-forward nightlife, and five heady days of Carnival bacchanal celebrations in February or March. But you don't have to be a thong-clad party seeker to appreciate the literal highs of mountainous Rio. The breathtakingly beautiful city is home to landmark sites like the Christ the Redeemer statue and world-class art museums. Sprinkle in beach volleyball matches, samba dancing, and stunning tropical mountains meet azure sea scenery you won't find anywhere else. But there are a few things to keep in mind: Brazil no longer requires a visa for American visitors (you'll pay an airport departure tax instead); the language is Portuguese, not Spanish; and the drug-trafficked favelas are a harsh reality. This Rio de Janeiro travel guide has everything you need to get started planning an unforgettable trip. Ready, set, Rio!",
+    "bestTimeToGo": "Rio de Janeiro is a bustling and modern beachfront city, with something for tourists to see and do on and off the sand 12 months out of the year. Weather wise, December through March (Brazil's summer months) and September through November (spring in Brazil) means temperatures between 21ºC and 32ºC and little rain. With Carnival comes crowds in February or March, but that's half the fun. It's no surprise New Year's Eve is another epically popular time to party in Rio.",
+    "source": "https://www.travelandleisure.com/travel-guide/rio-de-janeiro"
+  },
+  {
+    "id": 9,
+    "name": "Stockholm, SWE",
+    "dateDeparture": "01/09/2023",
+    "dateArrival": "10/09/2023",
+    "cardPreview": "https://cdn.thecrazytourist.com/wp-content/uploads/2020/11/ccimage-shutterstock_365993996.jpg",
+    "imageGallery": [
+      "https://res.klook.com/image/upload/cities/l60kj5nj2xedqjnf0tkf.jpg",
+      "https://wallpaperaccess.com/full/1469578.jpg",
+      "https://cdn.getyourguide.com/img/location/533bfb836c2d1.jpeg/88.jpg",
+      "https://sweden.nordicvisitor.com/images/1/sweden/stockholm-sweden-winter.jpg",
+      "https://s.inyourpocket.com/gallery/stockholm/2019/11/shutterstock-85893289.jpg"
+    ],
+    "tripDescription": "Don't be surprised if you find yourself contemplating a move to Sweden after a visit to Stockholm; the city makes traveling feel easy and effortless (even for newbies). Locals tend to be welcoming and friendly, English is widely spoken, and everything from the subway system to city streets are clean and straight-forward. But beyond ease of travel, Stockholm delivers a one-of-a-kind experience thanks to its placement on an archipelago of 14 islands that each offer a distinct feel—from the colorful buildings and cobblestone streets of Gamla Stan to the nature-rich isle of Djurgården. It's a place where you can hop on a public ferry and find yourself in a different world without ever leaving the city. And no matter where you end up, you'll find yourself at ease in the contemporary, urban feel Sweden is known for. Just make sure to make time for fika, a coffee and cake break, so you can slow down and enjoy life like the locals do.",
+    "bestTimeToGo": "Sweden can be chilly, making the summer months an ideal time to visit. Between May and September, the days are long, the weather is temperate, and the country's biggest national festival, Midsummer, kicks off—just keep in mind the summer is the city's busiest time as well. For good weather and fewer tourists, shoot for September to early November, when you'll experience the shift to fall and the coziness of Stockholm as the days begin to shorten. If you time it right, you might even catch the Stockholm Jazz Festival (October) and Stockholm International Film Festival (early November).",
+    "source": "https://www.travelandleisure.com/travel-guide/stockholm-sweden"
+  },
+  {
+    "id": 10,
+    "name": "Madrid, ESP",
+    "dateDeparture": "01/10/2023",
+    "dateArrival": "10/10/2023",
+    "cardPreview": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Palacio_de_Comunicaciones_-_01.jpg/1200px-Palacio_de_Comunicaciones_-_01.jpg",
+    "imageGallery": [
+      "https://www.headout.com/blog/wp-content/uploads/2019/11/Madrid-City.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bb/Plaza_Mayor_de_Madrid_02.jpg",
+      "https://images.musement.com/cover/0095/100/thumb_9499832_cover_header.jpeg",
+      "https://2.bp.blogspot.com/-q8lWCcL5CNY/UYX3bJubKsI/AAAAAAAAA3w/J9TAPNexYOE/s1600/Madrid-Capital-Of-Spain.jpg",
+      "https://www.prologis.com/sites/corporate/files/images/2017/03/ES_Madrid%2C-Spain.jpg"
+    ],
+    "tripDescription": "There's far more to Madrid than bullfighting, flamenco, and tapas, though you'll certainly find all three in the Spanish capital. Named one of the best cities to visit in Europe by Travel + Leisure readers and one of the best places to travel by T+L editors in 2023, there's a little something for everyone in this incredible city. Art lovers can spend the day strolling around Madrid's Golden Triangle of Art, where three of the world's biggest museums meet. History buffs will love the city's gorgeous architecture and historic landmarks, including the oldest restaurant in the world and an Egyptian temple. (Yes, it's actually Egyptian.) And you can't go wrong with the booming food scene here — it's made Madrid one of Europe's best food cities. Madrid offers so much to do that you may want to embrace the tradition of a midday siesta. The city's bars and clubs tend to hit their stride after midnight, so an afternoon nap may be just the fuel you need to transition from a day of sightseeing to a night of music and dance.",
+    "bestTimeToGo": "Madrid is a city that sizzles during the summer, with temperatures that can soar above 100 degrees Fahrenheit. Brave the heat for Madrid's take on Pride, which starts each year in late June and runs through early July. What used to be a small celebration in the late 1970s has since grown into one of the largest celebrations of LGBTQ+ pride in Europe. For better weather, fewer crowds, and more affordable prices, try visiting during the fall or spring. The days are sunny, and you'll be able to celebrate events like the San Isidro Festival, held each year in May, and the Autumn Festival (or Feria del Otoño), held in October or November. '[The Autumn Festival draws] acts from all over the world, from opera and ballet to theater and indie music', Stacey Leasca, a T+L contributing editor, previously reported.",
+    "source": "https://www.travelandleisure.com/travel-guide/madrid"
+  },
+  {
+    "id": 11,
+    "name": "Amsterdam, NLD",
+    "dateDeparture": "01/11/2023",
+    "dateArrival": "10/11/2023",
+    "cardPreview": "https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/travel/city-guides/amsterdam-river.jpg",
+    "imageGallery": [
+      "https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/if2300eacc6038158/version/1461748650/image.jpg",
+      "https://cdn.holidayguru.nl/wp-content/uploads/2019/02/amsterdam_iS-506474994.jpg",
+      "https://visiteurope.com/wp-content/uploads/nl-netherlands-shutterstock-196031342-option1-hd-l.jpeg",
+      "https://images8.alphacoders.com/107/1075495.jpg",
+      "https://www.strijland.nl/wp-content/uploads/2018/01/Amsterdam-Adam-Toren.jpg"
+    ],
+    "tripDescription": "Iconic canals, centuries-old townhomes, cobblestone lanes, and flower-adorned bridges. Amsterdam is as pretty as a postcard with charm in spades. It's also one of the rare places that attracts history buffs, luxury-minded travelers, couples seeking romance, and backpackers alike. Besides cultural attractions like the Anne Frank House and Rijksmuseum, the Dutch capital has leafy parks, hip shops, and an enduring sense of the past that thankfully never fades. With world-class museums, bicycle tours, and a thriving arts scene, it's really just a matter of culling it down to a select few activities. Since wandering around the city's quaint streets and sitting outside at a sidewalk cafe is so appealing, you won't want to cram too much into your daytime itinerary. In fact, Tesa Totengco, a member of Travel + Leisure's A-List Travel Advisor Board and the founder and CEO of Travels with Tesa, told T+L that what makes Amsterdam stand out from other European cities is “Their iconic canal network and how walkable the city is if you're not biking.” On the F&B front, this burgeoning culinary mecca boasts world-class restaurants that make every meal a gourmet adventure. When the sun goes down, there's no shortage of things to do either (think: cozy speakeasies, bustling bars, and plenty of nightclubs). Lastly, you can't talk about Amsterdam without mentioning “coffee shops” — and not the kind that strictly brews espresso. Totengco says these “coffee shops and the city's long-established attitudes towards tolerance and diversity,” make the city truly special. She notes that “Amsterdam is also one of the earliest places to adopt progressive policies regarding marijuana, sex work, and same-sex marriage.”Simply put: whatever your idealized version of a European getaway entails, Amsterdam won't disappoint.",
+    "bestTimeToGo": "Late spring is arguably the best season to visit Amsterdam. The forecast of mild temperatures couldn't be more perfect for biking around the city and exploring the surrounding countryside. Starting in early April, the legendary tulips begin to bloom, which lures travelers from around the world. The famous King's Day carnival, held on April 27, is another major draw. Totengco agrees that spring is the best time to visit Amsterdam. She recommends booking a trip “between April and May when the tulips are in full bloom and one can visit the Keukenhof gardens.” Because the aptly nicknamed “Venice of the North” enjoys an oceanic climate, it never gets super hot. While the rest of Europe flocks to the beaches of Santorini and Saint-Tropez, we love the idea of a summer city break in Amsterdam. You might have to contend with a few more fellow travelers, but it's certainly not going to be an impediment to a fantastic trip. Early fall is marked by pleasant temperatures and plenty of opportunities to spend time outdoors. Don't write off wintertime. Sure, the days are short and there's a frosty chill in the air, however, the sparkling frozen canals, holiday spirit, and lack of crowds make it a really special time.",
+    "source": "https://www.travelandleisure.com/travel-guide/amsterdam"
+  },
+  {
+    "id": 12,
+    "name": "Miami, USA",
+    "dateDeparture": "01/12/2023",
+    "dateArrival": "10/12/2023",
+    "cardPreview": "https://a.cdn-hotels.com/gdcs/production2/d1821/71438820-8f10-11e8-b6b0-0242ac110007.jpg",
+    "imageGallery": [
+      "https://www.flyingandtravel.com/wp-content/uploads/2018/12/tourist-attractions-in-miami-florida-brickell-downtown.jpg",
+      "https://cdn.getyourguide.com/img/location/5c0935da3cadc.jpeg/88.jpg",
+      "https://s1.1zoom.me/b3749/185/USA_Houses_Rivers_Coast_Miami_Night_517262_2560x1440.jpg",
+      "https://www.cooldestinations.com/wp-content/uploads/2021/03/Things-to-do-in-Miami-scaled.jpg",
+      "https://wallpapercave.com/wp/1zCcZIK.jpg"
+    ],
+    "tripDescription": "From the sizzling nightlife of South Beach to the authentic Cuban flavors of Little Havana, Miami offers one of the richest cultural experiences of any city in the United States. Its diverse neighborhoods house everything from world-famous street art to world-class restaurants, hotels, shopping centers, and cultural venues. Miami's colorful history is matched only by the vibrancy and verve of the modern global city it's continually blossoming into today. Miami has attracted the world's most daring and creative minds since its evolution from native Tequesta lands to the promising new frontier of railroad tycoon Henry Flagler in the late 1800s. A developing father of Florida, Flagler expanded his Florida East Coast Railway to Miami in 1896 and the rest, as they say, is history. Today, Miami is a destination for lovers of art, design, food, shopping, and even the great outdoors. Read on for Travel + Leisure's ultimate guide to the Magic City, covering everything you need to know to plan the perfect trip.",
+    "bestTimeToGo": "Spring is one of the best times to visit Miami. You'll find fewer crowds, pleasant temperatures, and plenty of outdoor events and activities to enjoy. Plus, April and May are the Miami Attraction & Museum Months, when you can score admission discounts and BOGO deals. The South Beach Wine & Food Festival, Carnaval Miami, Ultra Music Festival, Miami Fashion Week, and the Miami Open are other highlights of springtime in Miami. While Miami's beaches are at their brightest in summer, the temperatures are sizzling and the weather is humid. Crowds are at their lowest, so it's a fine time to go if South Beach tops your to-do list, but limit your sun exposure and stay hydrated. If you enjoy spoiling yourself — top restaurants and hotels, spa treatments, the works — but want to get the best bang for your buck, August is the best month of the year to visit Miami: it's the only time when Miami Spa Months, Miami Spice Restaurant Months, and Miami Hotels Months overlap. October and November are Miami's Entertainment Months, when you can explore Miami's diverse entertainment scene for less. Don't miss the world-famous Miami Book Fair held every November. Temperatures are cool to mild during South Florida's 'winter', and the weather is drier, but this also means it's peak travel time and you'll find thicker crowds of tourists and higher prices. Each December sees Art Basel, an annual convergence of the world's artistic set; winter is also prime time to catch a Miami Heat game. Visit in February to check out the Coconut Grove Arts Festival, held every Presidents' Day weekend.",
+    "source": "https://www.travelandleisure.com/travel-guide/miami"
+  }
+]

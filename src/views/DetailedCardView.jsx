@@ -1,10 +1,12 @@
 import DetailedCard from "../components/DetailedCard";
 
-function DetailedCardView() {
+function DetailedCardView({ id }) {
   return (
     <>
-      <main className="container mx-auto p-4">
-        <DetailedCard />
+      <main className="shadow-inner">
+        <div className="container mx-auto p-4">
+          <DetailedCard id={id} />
+        </div>
       </main>
     </>
   );

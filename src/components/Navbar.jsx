@@ -18,8 +18,8 @@ function Navbar() {
 
   return (
     <>
-      <header className="container mx-auto">
-        <nav>
+      <header className="">
+        <nav className="container mx-auto">
           {/* logo and page title */}
           <div className="flex place-content-around items-center gap-1 p-4 text-blue-600">
             <ul>
@@ -77,7 +77,7 @@ function Navbar() {
 
           {/* mobile menu links */}
           <ul
-            className="hidden flex-col items-center gap-2 text-blue-600 md:hidden"
+            className="hidden flex-col items-center gap-2 pb-4 text-blue-600 md:hidden"
             ref={mobileMenu}
           >
             <li className="hover:scale-105 hover:transition-all hover:duration-300">

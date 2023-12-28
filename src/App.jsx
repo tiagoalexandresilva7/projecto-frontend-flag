@@ -12,14 +12,16 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Switch>
         <Route path="/" component={HomepageView} />
         <Route path="/travelto" component={TravelToView} />
         <Route path="/about" component={AboutView} />
         <Route path="/copyright" component={CopyrightView} />
         <Route path="/contacts" component={ContactsView} />
-        <Route path="/trip" component={DetailedCardView} />
+        <Route path="/trip/:id">
+          {(params) => <DetailedCardView id={params.id} />}
+        </Route>
         <Route component={Error404View} />
       </Switch>
       <Footer />

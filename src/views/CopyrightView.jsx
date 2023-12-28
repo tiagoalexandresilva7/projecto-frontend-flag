@@ -3,8 +3,10 @@ import Copyright from "../components/Copyright";
 function CopyrightView() {
   return (
     <>
-      <main className="container mx-auto">
-        <Copyright />
+      <main className="shadow-inner">
+        <div className="container mx-auto">
+          <Copyright />
+        </div>
       </main>
     </>
   );

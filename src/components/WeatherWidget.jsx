@@ -17,7 +17,7 @@ function WeatherWidget() {
     <>
       <div className="mx-auto shadow-lg">
         <div>
-          <ul className="flex items-center justify-around xl:flex-col xl:p-5 xl:gap-3">
+          <ul className="flex items-center justify-around xl:flex-col xl:gap-3 xl:p-5">
             <li className="flex items-center">
               <img
                 src={cityData.icon}
@@ -39,13 +39,13 @@ function WeatherWidget() {
             <li>
               <div className="flex items-center gap-1 text-orange-400">
                 <h4>
-                  <i class="fa-solid fa-temperature-arrow-up"></i>
+                  <i className="fa-solid fa-temperature-arrow-up"></i>
                 </h4>
                 <h4>{cityData.weather?.list[0]?.main.temp_max}ºC</h4>
               </div>
               <div className="flex items-center gap-1 text-blue-400">
                 <h4>
-                  <i class="fa-solid fa-temperature-arrow-down"></i>
+                  <i className="fa-solid fa-temperature-arrow-down"></i>
                 </h4>
                 <h4>{cityData.weather?.list[0]?.main.temp_min}ºC</h4>
               </div>
