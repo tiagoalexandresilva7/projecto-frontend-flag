@@ -1,9 +1,15 @@
 import Contacts from "../components/Contacts";
+import { useEffect } from "react";
 
 function ContactsView() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <main className="min-h-[85vh] shadow-inner">
+      <main className="min-h-[89vh] shadow-inner">
         <div className="container mx-auto">
           <Contacts />
         </div>

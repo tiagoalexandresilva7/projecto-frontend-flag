@@ -13,7 +13,7 @@ function Hero() {
             <em>The World is our playground</em>
           </h2>
           <a href="#trips">
-            <button className="w-fit rounded border-2 border-blue-600 p-2 text-white hover:scale-105 hover:transition-all">
+            <button className="w-fit rounded border-2 border-blue-600 p-2 text-white hover:scale-105 hover:transition-all hover:bg-blue-600">
               See our trips
             </button>
           </a>

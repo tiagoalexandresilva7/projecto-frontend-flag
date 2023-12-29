@@ -5,6 +5,10 @@ import { useState, useEffect } from "react";
 function HomepageView() {
   const [data, setData] = useState([]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(function () {
     (async function () {
       const url = "/data.json";
@@ -23,7 +27,7 @@ function HomepageView() {
         <h1 className="text-2xl text-blue-600 md:text-3xl lg:text-4xl font-bold text-center pb-6" id="trips">
           Trips
         </h1>
-        <ul className="container mx-auto grid justify-items-center gap-10 px-4 pb-5 pt-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <ul className="container mx-auto grid justify-items-center gap-10 p-6 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
           {data.map((item) => (
             <li key={item.name}>
               <Card trip={item} />

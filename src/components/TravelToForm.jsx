@@ -38,9 +38,9 @@ function TravelToForm() {
       <div className="flex justify-center text-xl">
         <form
           onSubmit={submitHandler}
-          className="flex flex-col gap-4 rounded-2xl p-4 text-center items-center shadow-xl"
+          className="flex flex-col items-center gap-4 rounded-2xl p-4 text-center shadow-md"
         >
-          <div className="flex flex-col w-full">
+          <div className="flex w-full flex-col">
             <label htmlFor="name">What's your name?</label>
             <input
               type="text"
@@ -59,7 +59,7 @@ function TravelToForm() {
               value={city}
               onChange={inputHandler}
               placeholder="City"
-              className="rounded bg-blue-50 p-2 text-center"
+              className="w-full rounded bg-blue-50 p-2 text-center"
             ></input>
           </div>
           <div className="flex w-full flex-col">
@@ -80,11 +80,11 @@ function TravelToForm() {
               onChange={inputHandler}
               rows="7"
               cols="30"
-              placeholder="Favorite restaurant"
+              placeholder="A restaurant or museum"
               className="rounded bg-blue-50 p-2 text-center"
             ></textarea>
           </div>
-          <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 lg:text-2xl">
+          <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all">
             Travel!
           </button>
         </form>

@@ -3,13 +3,13 @@ import { Link } from "wouter";
 function Card({ trip }) {
   return (
     <>
-      <div className="w-80 rounded-2xl shadow-md hover:transition-all hover:duration-150 hover:ease-in-out md:hover:scale-105">
+      <div className="w-80 rounded-2xl shadow-md hover:scale-105 hover:transition-all hover:duration-150 hover:ease-in-out">
         <img
           src={trip.cardPreview}
           alt={trip.name}
           className="h-64 rounded-md shadow-sm"
         />
-        <div className="p-4 flex flex-col items-center">
+        <div className="flex flex-col items-center p-4">
           <div className="text-center text-xl font-semibold text-blue-600 lg:pb-2 lg:text-2xl">
             <h2 className="pb-1 lg:pb-2 ">{trip.name}</h2>
             <h3 className="text-lg">
@@ -22,7 +22,7 @@ function Card({ trip }) {
             </h3>
           </div>
           <Link href={`/trip/${trip.id}`}>
-            <button className="w-6/12 p-2 text-xl border-2 rounded border-blue-600 text-blue-600 lg:text-2xl">
+            <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all">
               Visit
             </button>
           </Link>

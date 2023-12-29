@@ -81,17 +81,17 @@ function Navbar() {
             ref={mobileMenu}
           >
             <li className="hover:scale-105 hover:transition-all hover:duration-300">
-              <Link href="/">
+              <Link href="/" onClick={mobileMenuHandler}>
                 <i className="fa-solid fa-house-flag"></i> Home
               </Link>
             </li>
             <li className="hover:scale-105 hover:transition-all hover:duration-300">
-              <Link href="/travelto">
+              <Link href="/travelto" onClick={mobileMenuHandler}>
                 <i className="fa-solid fa-map-location-dot"></i> Travel to...
               </Link>
             </li>
             <li className="hover:scale-105 hover:transition-all hover:duration-300">
-              <Link href="/about">
+              <Link href="/about" onClick={mobileMenuHandler}>
                 <i className="fa-solid fa-user-astronaut"></i> About the Tourist
               </Link>
             </li>
