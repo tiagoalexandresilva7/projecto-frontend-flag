@@ -9,7 +9,7 @@ function WeatherWidget() {
     (async function () {
       const result = await weatherAPI.Query();
       setCityData(result);
-      console.log(cityData);
+      /* console.log(cityData); */
     })();
   }, []);
 

@@ -3,10 +3,10 @@ function Error404() {
     <>
       <div className="p-4">
         <h2 className="text-center text-2xl text-blue-600">
-          That's where you want to go?
+          Uh oh...
         </h2>
         <h2 className="pb-4 text-center text-2xl text-blue-600">
-          Into a black hole?
+          That's a black hole!
         </h2>
         <p className="text-xl sm:text-center">
           I would turn around if I were you. No one in their right mind would

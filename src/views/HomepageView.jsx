@@ -1,13 +1,17 @@
 import Hero from "../components/Hero";
 import Card from "../components/Card";
-import file from "../components/apiobjs/data.json";
 import { useState, useEffect } from "react";
 
 function HomepageView() {
   const [data, setData] = useState([]);
 
   useEffect(function () {
-    setData(file);
+    (async function () {
+      const url = "/data.json";
+      const response = await fetch(url);
+      const result = await response.json();
+      setData(result);
+    })();
   }, []);
 
   return (

@@ -9,9 +9,9 @@ function Card({ trip }) {
           alt={trip.name}
           className="h-64 rounded-md shadow-md"
         />
-        <div className="p-4">
+        <div className="p-4 flex flex-col items-center">
           <div className="text-center text-xl font-semibold text-blue-600 lg:pb-2 lg:text-2xl">
-            <h2 className="pb-1 lg:pb-2">{trip.name}</h2>
+            <h2 className="pb-1 lg:pb-2 ">{trip.name}</h2>
             <h3 className="text-lg">
               <i className="fa-solid fa-plane-departure pr-1"></i>
               {trip.dateDeparture}
@@ -21,13 +21,11 @@ function Card({ trip }) {
               {trip.dateArrival}
             </h3>
           </div>
-          <div>
-            <Link href={`/trip/${trip.id}`}>
-              <button className="w-full rounded-full bg-blue-600 p-2 text-xl  text-white hover:transition-all hover:duration-300 hover:ease-in-out md:hover:shadow-xl lg:text-2xl">
-                Visit
-              </button>
-            </Link>
-          </div>
+          <Link href={`/trip/${trip.id}`}>
+            <button className="w-6/12 p-2 text-xl border-2 rounded border-blue-600 text-blue-600 lg:text-2xl">
+              Visit
+            </button>
+          </Link>
         </div>
       </div>
     </>

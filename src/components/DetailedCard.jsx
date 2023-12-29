@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
 import Slideshow from "./Slideshow";
 import WeatherWidget from "./WeatherWidget";
-import file from "./apiobjs/data.json";
+/* import file from "./apiobjs/data.json"; */
 
 function DetailedCard({ id }) {
   const [trip, setTrip] = useState({});
 
   useEffect(function () {
     (async function () {
-      /* const url = "./apiobjs/data.json";
+      const url = "/data.json";
       const response = await fetch(url)
-      const result = await response.json() */
+      const result = await response.json()
 
-      const foundTrip = file.find((trip) => {
+      const foundTrip = result.find((trip) => {
         return trip.id == id;
       });
 
       setTrip(foundTrip);
     })();
-  }, []);
+  }, [id]);
 
   return (
     <>
