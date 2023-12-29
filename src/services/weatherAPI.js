@@ -2,7 +2,7 @@ let fetchedCoordinates = {};
 let fetchedCityData = {};
 const apikey = "appid=e52c092aae1af777ecf96980c2fd4b06";
 
-async function FetchCityLatLon(city = "Mafra, Pt") { 
+async function FetchCityLatLon(city) { 
   const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&${apikey}`;
 
   const response = await fetch(url);

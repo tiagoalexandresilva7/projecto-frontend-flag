@@ -4,7 +4,7 @@ function DetailedCardView({ id }) {
   return (
     <>
       <main className="shadow-inner">
-        <div className="container mx-auto p-4">
+        <div className="mx-auto p-4">
           <DetailedCard id={id} />
         </div>
       </main>

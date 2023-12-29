@@ -38,9 +38,9 @@ function TravelToForm() {
       <div className="flex justify-center text-xl">
         <form
           onSubmit={submitHandler}
-          className="flex flex-col gap-4 rounded-2xl p-4 text-center shadow-xl"
+          className="flex flex-col gap-4 rounded-2xl p-4 text-center items-center shadow-xl"
         >
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             <label htmlFor="name">What's your name?</label>
             <input
               type="text"
@@ -48,7 +48,7 @@ function TravelToForm() {
               value={name}
               onChange={inputHandler}
               placeholder="Tiago"
-              className="rounded-full bg-blue-50 p-2 text-center"
+              className="rounded bg-blue-50 p-2 text-center"
             ></input>
           </div>
           <div className="flex flex-col">
@@ -59,17 +59,17 @@ function TravelToForm() {
               value={city}
               onChange={inputHandler}
               placeholder="City"
-              className="rounded-full bg-blue-50 p-2 text-center"
+              className="rounded bg-blue-50 p-2 text-center"
             ></input>
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex w-full flex-col">
             <label htmlFor="date">And when?</label>
             <input
               type="date"
               id="date"
               value={date}
               onChange={inputHandler}
-              className="rounded-full bg-blue-50 p-2 text-center text-slate-400"
+              className="rounded bg-blue-50 p-2 text-center text-slate-400"
             ></input>
           </div>
           <div className="flex flex-col">
@@ -80,11 +80,11 @@ function TravelToForm() {
               onChange={inputHandler}
               rows="7"
               cols="30"
-              placeholder="Type here..."
-              className="rounded-3xl bg-blue-50 p-2 text-center"
+              placeholder="Favorite restaurant"
+              className="rounded bg-blue-50 p-2 text-center"
             ></textarea>
           </div>
-          <button className="w-full rounded-full bg-blue-600 p-2 text-xl  text-white hover:transition-all hover:duration-300 hover:ease-in-out md:hover:shadow-xl lg:text-2xl">
+          <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 lg:text-2xl">
             Travel!
           </button>
         </form>

@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
-//import jsonfile from "./apiobjs/weatherapi.json";
 import weatherAPI from "../services/weatherAPI";
 
-function WeatherWidget() {
+function WeatherWidget({city}) {
   const [cityData, setCityData] = useState({});
 
   useEffect(() => {
     (async function () {
-      const result = await weatherAPI.Query();
+      const result = await weatherAPI.Query(city);
       setCityData(result);
-      /* console.log(cityData); */
+      console.log(cityData)
     })();
-  }, []);
+  }, [city]);
 
   return (
     <>
-      <div className="mx-auto shadow-lg">
+      <div className="mx-auto shadow-md">
         <div>
           <ul className="flex items-center justify-around xl:flex-col xl:gap-3 xl:p-5">
             <li className="flex items-center">

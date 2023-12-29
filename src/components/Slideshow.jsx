@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import data from "./apiobjs/gallery.json";
 
 function Slideshow({ images, alt }) {
   const [gallery, setGallery] = useState([]);
@@ -8,10 +7,6 @@ function Slideshow({ images, alt }) {
   useEffect(
     function () {
       (async function () {
-        /* const url = "";
-      const response = await fetch(url);
-      const result = await response.json();
-      console.log(response) */
         setGallery(images);
       })();
     },
@@ -32,15 +27,15 @@ function Slideshow({ images, alt }) {
 
   return (
     <>
-      <div className="relative mx-auto mb-4">
+      <div className="relative mx-auto mb-4 h-96 xl:h-[600px] 2xl:h-[800px]">
         <div
-          className="absolute left-3 top-1/2 cursor-pointer p-4 text-4xl text-white hover:scale-125 hover:transition-all active:text-blue-600 active:transition-all active:duration-75 md:text-6xl lg:left-6 lg:p-8 lg:text-8xl"
+          className="absolute left-6 top-1/2 cursor-pointer text-6xl text-white hover:scale-125 hover:transition-all active:text-blue-600 active:transition-all active:duration-75 xl:left-12 xl:text-8xl"
           onClick={slideshowPrevious}
         >
           <i className="fa-solid fa-chevron-left"></i>
         </div>
         <div
-          className="absolute right-3 top-1/2 cursor-pointer p-4 text-4xl text-white hover:scale-125 hover:transition-all active:text-blue-600 active:duration-75 md:text-6xl lg:right-6 lg:p-8 lg:text-8xl"
+          className="absolute right-6 top-1/2 cursor-pointer text-6xl text-white hover:scale-125 hover:transition-all active:text-blue-600 active:duration-75 xl:text-8xl xl:right-12"
           onClick={slideshowNext}
         >
           <i className="fa-solid fa-chevron-right"></i>
@@ -48,28 +43,9 @@ function Slideshow({ images, alt }) {
         <img
           src={gallery?.[slideshowIndex]}
           alt={alt}
-          className="mx-auto rounded-3xl shadow-lg "
+          className="mx-auto h-full w-full rounded-3xl shadow-lg"
         />
       </div>
-      {/* <div className="relative mx-auto mb-4">
-        <div
-          className="absolute left-3 top-1/2 cursor-pointer p-4 text-4xl text-white md:text-6xl lg:left-6 lg:p-8 lg:text-8xl"
-          onClick={slideshowPrevious}
-        >
-          <i className="fa-solid fa-chevron-left"></i>
-        </div>
-        <div
-          className="absolute right-3 top-1/2 cursor-pointer p-4 text-4xl text-white md:text-6xl lg:right-6 lg:p-8 lg:text-8xl"
-          onClick={slideshowNext}
-        >
-          <i className="fa-solid fa-chevron-right"></i>
-        </div>
-        <img
-          src={gallery?.[slideshowIndex]}
-          alt={alt}
-          className="mx-auto rounded-3xl shadow-lg"
-        />
-      </div> */}
     </>
   );
 }
