@@ -39,7 +39,7 @@ function DetailedCard({ id }) {
         </div>
         <p className="pb-4">{trip.bestTimeToGo}</p>
         <div className="pb-4 xl:flex xl:gap-8">
-          <WeatherWidget city={trip.name} />
+          {trip.name ? <WeatherWidget city={trip.name} /> : null}
         </div>
       </div>
     </>

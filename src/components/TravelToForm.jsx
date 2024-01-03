@@ -51,7 +51,7 @@ function TravelToForm() {
               className="rounded bg-blue-50 p-2 text-center"
             ></input>
           </div>
-          <div className="flex flex-col">
+          <div className="flex w-full flex-col">
             <label htmlFor="city">Where do you think I should visit?</label>
             <input
               type="text"
@@ -59,7 +59,7 @@ function TravelToForm() {
               value={city}
               onChange={inputHandler}
               placeholder="City"
-              className="w-full rounded bg-blue-50 p-2 text-center"
+              className="rounded bg-blue-50 p-2 text-center"
             ></input>
           </div>
           <div className="flex w-full flex-col">
