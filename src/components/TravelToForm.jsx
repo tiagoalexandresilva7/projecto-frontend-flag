@@ -1,19 +1,18 @@
 import { useState } from "react";
 
 function TravelToForm() {
-  // works as project guideline says
-  // intend to add:
-  // disabled submit button while submitting
-  // success message after submitting
-
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [date, setDate] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmited, setIsSubmited] = useState(false);
+
+  console.log(isSubmited);
 
   function submitHandler(event) {
     event.preventDefault();
     const submittedFormData = { name, city, date, message };
+    setIsSubmited(true);
     console.log(submittedFormData);
   }
 
@@ -47,7 +46,6 @@ function TravelToForm() {
               id="name"
               value={name}
               onChange={inputHandler}
-              placeholder="Tiago"
               className="rounded bg-blue-50 p-2 text-center"
             ></input>
           </div>
@@ -58,7 +56,6 @@ function TravelToForm() {
               id="city"
               value={city}
               onChange={inputHandler}
-              placeholder="City"
               className="rounded bg-blue-50 p-2 text-center"
             ></input>
           </div>
@@ -69,7 +66,7 @@ function TravelToForm() {
               id="date"
               value={date}
               onChange={inputHandler}
-              className="rounded bg-blue-50 p-2 text-center text-slate-400"
+              className="w-full rounded bg-blue-50 p-2 text-center text-slate-400"
             ></input>
           </div>
           <div className="flex flex-col">
@@ -84,9 +81,18 @@ function TravelToForm() {
               className="rounded bg-blue-50 p-2 text-center"
             ></textarea>
           </div>
-          <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all">
-            Travel!
-          </button>
+          {isSubmited ? (
+            <button
+              disabled
+              className="w-6/12 rounded border-2 border-green-600 p-2 text-xl text-green-600 hover:bg-green-600 hover:text-white hover:transition-all"
+            >
+              Success!
+            </button>
+          ) : (
+            <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all">
+              Submit
+            </button>
+          )}
         </form>
       </div>
     </>
