@@ -9,52 +9,59 @@ function WeatherWidget({ city }) {
       const result = await weatherAPI.Query(city);
       setCityData(result);
     })();
-  }, [city]);
+  }, []);
 
   return (
     <>
-      <p></p>
-      <div className="mx-auto shadow-md">
-        <div>
-          <ul className="flex items-center justify-around xl:flex-col xl:gap-3 xl:p-5">
-            <li className="flex items-center">
-              <img
-                src={cityData.icon}
-                alt={cityData.weather?.data.list[0].weather[0].main}
-                width="75px"
-              />
-            </li>
-            <li>
-              <div>
-                <h3 className="text-xl font-bold">
-                  {cityData.weather?.data.list[0].weather[0].main}
-                </h3>
-                <h4>{cityData.weather?.data.city.name}</h4>
-              </div>
-            </li>
-            <li className="text-xl font-bold">
-              <h3>{Math.round(cityData.weather?.data.list[0].main.temp)}ºC</h3>
-            </li>
-            <li>
-              <div className="flex items-center gap-1 text-orange-400">
-                <h4>
-                  <i className="fa-solid fa-temperature-arrow-up"></i>
-                </h4>
-                <h4>
-                  {Math.round(cityData.weather?.data.list[0].main.temp_max)}ºC
-                </h4>
-              </div>
-              <div className="flex items-center gap-1 text-blue-400">
-                <h4>
-                  <i className="fa-solid fa-temperature-arrow-down"></i>
-                </h4>
-                <h4>
-                  {Math.round(cityData.weather?.data.list[0].main.temp_min)}ºC
-                </h4>
-              </div>
-            </li>
-          </ul>
+      <div className="container mx-auto shadow-inner">
+        <div className="flex place-content-between place-items-center p-4 md:place-content-evenly">
+          <img
+            src={cityData.currentWeather?.icon}
+            alt={cityData.currentWeather?.condition}
+            width="75px"
+          />
+          <div className="text-center text-lg">
+            <h3 className="font-bold">
+              {cityData.currentWeather?.temp}
+              ºC
+            </h3>
+            <h3>{cityData.currentWeather?.condition}</h3>
+          </div>
+          <div>
+            <div className="flex items-center gap-1">
+              <i className="fa-solid fa-temperature-arrow-up text-orange-400"></i>
+              <h3>
+                {cityData.currentWeather?.highestTemp}
+                ºC
+              </h3>
+            </div>
+            <div className="flex items-center gap-1">
+              <i className="fa-solid fa-temperature-arrow-down text-blue-400"></i>
+              <h3>
+                {cityData.currentWeather?.lowestTemp}
+                ºC
+              </h3>
+            </div>
+          </div>
         </div>
+        <ul>
+          {cityData.forecast?.map((day) => (
+            <li
+              key={day.name}
+              className="flex place-content-between p-4 hover:bg-slate-50 hover:transition-all md:place-content-evenly"
+            >
+              <h3>{day.name}</h3>
+              <p className="flex place-items-center gap-1">
+                <i className="fa-solid fa-temperature-arrow-up text-orange-400"></i>
+                {day.highestTemp}ºC
+              </p>
+              <p className="flex place-items-center gap-1">
+                <i className="fa-solid fa-temperature-arrow-down text-blue-400"></i>
+                {day.lowestTemp}ºC
+              </p>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );

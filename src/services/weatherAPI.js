@@ -30,22 +30,12 @@ async function FetchCityWeather(fetchedCoordinates) {
   return forecast;
 }
 
-function FetchCityIcon(fetchedCityData) {
-  const iconUrl = `https://openweathermap.org/img/wn/${fetchedCityData.data.list[0].weather[0].icon}@2x.png`;
-  return iconUrl;
-}
 
 async function Query(city) {
   await FetchCityLatLon(city);
   const weather = await FetchCityWeather(fetchedCoordinates);
-  const icon = FetchCityIcon(fetchedCityData);
 
-  const result = {
-    weather,
-    icon,
-  };
-
-  return result;
+  return weather;
 }
 
 export default { Query };

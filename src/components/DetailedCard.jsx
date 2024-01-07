@@ -5,22 +5,19 @@ import WeatherWidget from "./WeatherWidget";
 function DetailedCard({ id }) {
   const [trip, setTrip] = useState({});
 
-  useEffect(
-    function () {
-      (async function () {
-        const url = "/data.json";
-        const response = await fetch(url);
-        const result = await response.json();
+  useEffect(function () {
+    (async function () {
+      const url = "/data.json";
+      const response = await fetch(url);
+      const result = await response.json();
 
-        const foundTrip = result.find((trip) => {
-          return trip.id == id;
-        });
+      const foundTrip = result.find((trip) => {
+        return trip.id == id;
+      });
 
-        setTrip(foundTrip);
-      })();
-    },
-    [id, trip],
-  );
+      setTrip(foundTrip);
+    })();
+  }, []);
 
   return (
     <>
@@ -39,7 +36,7 @@ function DetailedCard({ id }) {
         </div>
         <p className="pb-4">{trip.bestTimeToGo}</p>
         <div className="pb-4 xl:flex xl:gap-8">
-          {trip.name ? <WeatherWidget city={trip.name} /> : null}
+          {trip.name ? <WeatherWidget city={trip.name} /> : ""}
         </div>
       </div>
     </>

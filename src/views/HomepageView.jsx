@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 function HomepageView() {
   const [data, setData] = useState([]);
+  console.log(data)
 
   useEffect(() => {
     window.scrollTo(0, 0);

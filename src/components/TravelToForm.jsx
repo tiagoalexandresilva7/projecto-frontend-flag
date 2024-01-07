@@ -7,13 +7,11 @@ function TravelToForm() {
   const [message, setMessage] = useState("");
   const [isSubmited, setIsSubmited] = useState(false);
 
-  console.log(isSubmited);
-
   function submitHandler(event) {
     event.preventDefault();
     const submittedFormData = { name, city, date, message };
     setIsSubmited(true);
-    console.log(submittedFormData);
+    console.log(submittedFormData); // needed
   }
 
   function inputHandler(event) {
