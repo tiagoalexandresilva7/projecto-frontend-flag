@@ -24,12 +24,10 @@ async function FetchCityWeather(fetchedCoordinates) {
   const response = await fetch(url);
   const result = await response.json();
 
-  const forecast = await weatherForecast.dailyForecast(result);
+  const forecast = weatherForecast.dailyForecast(result);
 
-  fetchedCityData = forecast;
   return forecast;
 }
-
 
 async function Query(city) {
   await FetchCityLatLon(city);

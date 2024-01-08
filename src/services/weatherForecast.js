@@ -1,6 +1,6 @@
 const date = new Date();
 
-let days = [
+const daysOriginalData = [
   {
     name: "Sunday",
     lowestTemp: 999,
@@ -55,6 +55,10 @@ let currentWeather = {
 };
 
 function dailyForecast(data) {
+  currentWeather.lowestTemp = 999;
+  currentWeather.highestTemp = -999;
+  let days = JSON.parse(JSON.stringify(daysOriginalData));
+
   for (let i = 0; i < data.list.length; i++) {
     const apiTime = new Date(data.list[i]?.dt * 1000);
     const currentDay = apiTime.getDay();
@@ -75,7 +79,8 @@ function dailyForecast(data) {
     if (isToday) {
       if (currentWeather.lowestTemp > retrievedLowestTemp) {
         currentWeather.lowestTemp = retrievedLowestTemp;
-      } else if (currentWeather.highestTemp < retrievedHighestTemp) {
+      }
+      if (currentWeather.highestTemp < retrievedHighestTemp) {
         currentWeather.highestTemp = retrievedHighestTemp;
       }
     } else if (isSunday) {

@@ -17,16 +17,18 @@ function DetailedCard({ id }) {
 
       setTrip(foundTrip);
     })();
-  }, []);
+  }, [id]);
 
   return (
     <>
+    <div className="container mx-auto">
       <Slideshow images={trip.imageGallery} alt={trip.name} />
+    </div>
       <div className="container mx-auto">
         <div className="pb-4 text-center text-2xl font-semibold text-blue-600">
           <h2>{trip.name}</h2>
         </div>
-        <p className="pb-4">{trip.description}</p>
+        <p className="pb-4 text-xl">{trip.description}</p>
         <div className="pb-4">
           <img
             src="https://i.redd.it/k1uzwu8wwuv01.png"
@@ -34,9 +36,9 @@ function DetailedCard({ id }) {
             className="rounded-3xl"
           />
         </div>
-        <p className="pb-4">{trip.bestTimeToGo}</p>
+        <p className="pb-4 text-xl">{trip.bestTimeToGo}</p>
         <div className="pb-4 xl:flex xl:gap-8">
-          {trip.name ? <WeatherWidget city={trip.name} /> : ""}
+          {trip.name ? <WeatherWidget city={trip.name} /> : null}
         </div>
       </div>
     </>

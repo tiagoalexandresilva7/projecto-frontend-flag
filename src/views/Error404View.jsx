@@ -9,7 +9,7 @@ function Error404View() {
 
   return (
     <>
-      <main className="min-h-[90vh] shadow-inner">
+      <main className="min-h-[90vh] shadow-inner pt-24">
         <div className="mx-auto">
           <Error404 />
         </div>

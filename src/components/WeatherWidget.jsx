@@ -9,18 +9,18 @@ function WeatherWidget({ city }) {
       const result = await weatherAPI.Query(city);
       setCityData(result);
     })();
-  }, []);
+  }, [city]);
 
   return (
     <>
-      <div className="container mx-auto shadow-inner">
+      <div className="mx-auto w-96 text-xl shadow-inner">
         <div className="flex place-content-between place-items-center p-4 md:place-content-evenly">
           <img
             src={cityData.currentWeather?.icon}
             alt={cityData.currentWeather?.condition}
             width="75px"
           />
-          <div className="text-center text-lg">
+          <div className="text-center">
             <h3 className="font-bold">
               {cityData.currentWeather?.temp}
               ºC

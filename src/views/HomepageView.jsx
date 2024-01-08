@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 
 function HomepageView() {
   const [data, setData] = useState([]);
-  console.log(data)
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,10 +21,10 @@ function HomepageView() {
   return (
     <>
       <main className="shadow-inner">
-        <div className="mx-auto px-4 pb-6 pt-4">
+        <div className="mx-auto pb-8">
           <Hero />
         </div>
-        <h1 className="text-2xl text-blue-600 md:text-3xl lg:text-4xl font-bold text-center pb-6" id="trips">
+        <h1 className="text-2xl text-blue-600 md:text-3xl lg:text-4xl font-bold text-center pb-6 scroll-mt-28" id="trips">
           Trips
         </h1>
         <ul className="container mx-auto grid justify-items-center gap-10 p-6 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">

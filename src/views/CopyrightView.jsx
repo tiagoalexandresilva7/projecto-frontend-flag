@@ -9,7 +9,7 @@ function CopyrightView() {
 
   return (
     <>
-      <main className="min-h-[89vh] shadow-inner">
+      <main className="min-h-[89vh] shadow-inner pt-24">
         <div className="container mx-auto">
           <Copyright />
         </div>
