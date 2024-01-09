@@ -11,7 +11,7 @@ function HomepageView() {
 
   useEffect(function () {
     (async function () {
-      const url = "/data.json";
+      const url = "/api/data.json";
       const response = await fetch(url);
       const result = await response.json();
       setData(result);
@@ -24,13 +24,16 @@ function HomepageView() {
         <div className="mx-auto pb-8">
           <Hero />
         </div>
-        <h1 className="text-2xl text-blue-600 md:text-3xl lg:text-4xl font-bold text-center pb-6 scroll-mt-28" id="trips">
-          Trips
+        <h1
+          className="scroll-mt-28 pb-6 text-center text-2xl font-bold text-blue-600 md:text-3xl lg:text-4xl"
+          id="Journeys"
+        >
+          Journeys
         </h1>
         <ul className="container mx-auto grid justify-items-center gap-10 p-6 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
           {data.map((item) => (
             <li key={item.name}>
-              <Card trip={item} />
+              <Card journey={item} />
             </li>
           ))}
         </ul>

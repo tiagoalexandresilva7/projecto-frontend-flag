@@ -1,29 +1,15 @@
 import { useState } from "react";
 
 function TravelToForm() {
-  const [name, setName] = useState("");
-  const [city, setCity] = useState("");
-  const [date, setDate] = useState("");
-  const [message, setMessage] = useState("");
   const [isSubmited, setIsSubmited] = useState(false);
 
   function submitHandler(event) {
     event.preventDefault();
-    const submittedFormData = { name, city, date, message };
+    const form = event.target;
+    const formData = new FormData(form);
+    const formObj = Object.fromEntries(formData.entries());
     setIsSubmited(true);
-    console.log(submittedFormData); // needed
-  }
-
-  function inputHandler(event) {
-    if (event.target.id == "name") {
-      setName(event.target.value);
-    } else if (event.target.id == "city") {
-      setCity(event.target.value);
-    } else if (event.target.id == "date") {
-      setDate(event.target.value);
-    } else if (event.target.id == "message") {
-      setMessage(event.target.value);
-    }
+    console.log(formObj); // needed
   }
 
   return (
@@ -31,63 +17,70 @@ function TravelToForm() {
       <h2 className="pb-6 text-center text-2xl font-bold text-blue-600">
         Fill out the form and tell me where you want me to travel!
       </h2>
-
-      <div className="flex justify-center text-xl">
+      <div className="p-4 text-xl shadow-md">
         <form
           onSubmit={submitHandler}
-          className="flex flex-col items-center gap-4 rounded-2xl p-4 text-center shadow-md"
+          className="mx-auto flex flex-col place-content-center gap-4 rounded-2xl pb-4 text-center"
         >
-          <div className="flex w-full flex-col">
-            <label htmlFor="name">What's your name?</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={inputHandler}
-              className="rounded bg-blue-50 p-2 text-center"
-            ></input>
-          </div>
-          <div className="flex w-full flex-col">
-            <label htmlFor="city">Where do you think I should visit?</label>
-            <input
-              type="text"
-              id="city"
-              value={city}
-              onChange={inputHandler}
-              className="rounded bg-blue-50 p-2 text-center"
-            ></input>
-          </div>
-          <div className="flex w-full flex-col">
-            <label htmlFor="date">And when?</label>
-            <input
-              type="date"
-              id="date"
-              value={date}
-              onChange={inputHandler}
-              className="w-full rounded bg-blue-50 p-2 text-center text-slate-400"
-            ></input>
-          </div>
-          <div className="flex flex-col">
-            <label htmlFor="message">Any particular point of interest?</label>
-            <textarea
-              id="message"
-              value={message}
-              onChange={inputHandler}
-              rows="7"
-              cols="30"
-              placeholder="A restaurant or museum"
-              className="rounded bg-blue-50 p-2 text-center"
-            ></textarea>
+          <div className="gap-8 md:flex md:flex-row">
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-col">
+                <label>
+                  What's your name?
+                  <input
+                    type="text"
+                    name="name"
+                    className="w-full rounded bg-blue-50 p-2 text-center outline-blue-600"
+                  ></input>
+                </label>
+              </div>
+              <div className="flex w-full flex-col">
+                <label>
+                  Where do you think I should visit?
+                  <input
+                    type="text"
+                    name="city"
+                    required
+                    className="w-full rounded bg-blue-50 p-2 text-center outline-blue-600"
+                  ></input>
+                </label>
+              </div>
+              <div className="flex w-full flex-col pb-2">
+                <label>
+                  And when?
+                  <input
+                    type="date"
+                    name="date"
+                    className="w-full rounded bg-blue-50 p-2 text-center text-slate-400 outline-blue-600"
+                  ></input>
+                </label>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <label>
+                Any particular point of interest?
+                <textarea
+                  name="message"
+                  rows="7"
+                  cols="30"
+                  placeholder="A restaurant or museum"
+                  className="w-full rounded bg-blue-50 p-2 text-center outline-blue-600"
+                ></textarea>
+              </label>
+            </div>
           </div>
           {isSubmited ? (
             <button
               disabled
-              className="w-6/12 rounded border-2 border-green-600 p-2 text-xl text-green-600 hover:bg-green-600 hover:text-white hover:transition-all"
+              className="mx-auto w-28 rounded border-2 border-green-600 bg-green-600 p-2 text-xl text-white hover:text-white hover:transition-all"
             >
               Success!
             </button>
           ) : (
-            <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all">
+            <button
+              type="submit"
+              className="mx-auto w-28 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all"
+            >
               Submit
             </button>
           )}

@@ -16,7 +16,7 @@ function Hero() {
               <strong className="text-5xl">DESTINATION</strong>
             </em>
           </h2>
-          <a href="#trips">
+          <a href="#Journeys">
             <button className="w-fit rounded border-2 border-blue-600 bg-blue-600 p-2 text-xl text-white hover:scale-105 hover:transition-all">
               Check my journeys
             </button>

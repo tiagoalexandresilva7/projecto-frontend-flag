@@ -20,7 +20,7 @@ function App() {
         <Route path="/about" component={AboutView} />
         <Route path="/copyright" component={CopyrightView} />
         <Route path="/contacts" component={ContactsView} />
-        <Route path="/trip/:id">
+        <Route path="/journeys/:id">
           {(params) => <DetailedCardView id={params.id} />}
         </Route>
         <Route component={Error404View} />
