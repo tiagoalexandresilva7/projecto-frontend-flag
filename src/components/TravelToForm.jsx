@@ -42,7 +42,11 @@ function TravelToForm() {
                     type="text"
                     name="city"
                     required
-                    className={`w-full rounded bg-blue-50 p-2 text-center ${isSubmitButtonClicked ? "outline-red-600" : "outline-blue-600"}`}
+                    className={`w-full rounded bg-blue-50 p-2 text-center ${
+                      isSubmitButtonClicked
+                        ? "outline-red-600"
+                        : "outline-blue-600"
+                    }`}
                   ></input>
                 </label>
               </div>
@@ -75,7 +79,7 @@ function TravelToForm() {
               disabled
               className="mx-auto w-28 rounded border-2 border-green-600 bg-green-600 p-2 text-xl text-white"
             >
-              Success!
+              Success*
             </button>
           ) : (
             <button
@@ -86,6 +90,11 @@ function TravelToForm() {
               Submit
             </button>
           )}
+          {isSubmited ? (
+            <p className="mt-2 text-xs italic text-red-600">
+              *Check the console
+            </p>
+          ) : null}
         </form>
       </div>
     </>
