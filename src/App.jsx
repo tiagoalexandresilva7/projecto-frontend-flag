@@ -2,8 +2,6 @@ import { Route, Switch } from "wouter";
 import HomepageView from "./views/HomepageView";
 import TravelToView from "./views/TravelToView";
 import AboutView from "./views/AboutView";
-import CopyrightView from "./views/CopyrightView";
-import ContactsView from "./views/ContactsView";
 import Error404View from "./views/Error404View";
 import DetailedCardView from "./views/DetailedCardView";
 import Navbar from "./components/Navbar";
@@ -18,8 +16,6 @@ function App() {
         <Route path="/" component={HomepageView} />
         <Route path="/travelto" component={TravelToView} />
         <Route path="/about" component={AboutView} />
-        <Route path="/copyright" component={CopyrightView} />
-        <Route path="/contacts" component={ContactsView} />
         <Route path="/journeys/:id">
           {(params) => <DetailedCardView id={params.id} />}
         </Route>
