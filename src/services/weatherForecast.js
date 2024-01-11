@@ -1,5 +1,3 @@
-const date = new Date();
-
 const daysOriginalData = [
   {
     name: "Sunday",
@@ -51,7 +49,7 @@ let currentWeather = {
   highestTemp: -999,
   condition: "",
   icon: "",
-  time: date.getDay(),
+  time: new Date().getDay(),
 };
 
 function dailyForecast(data) {
@@ -145,8 +143,12 @@ function dailyForecast(data) {
     currentWeather.icon = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
     currentWeather.condition = data.list[0].weather[0].main;
   }
-
-  const forecast = days.filter((day) => day.isUpdated == true);
+  
+  const today = new Date().getDay()
+  const nextDays = days.slice(today + 1);
+  const previousDays = days.slice(0, today + 1);
+  const reorderedForecast = nextDays.concat(previousDays);
+  const forecast = reorderedForecast.filter((day) => day.isUpdated == true);
 
   //data is original api response
   return { /* data, */ forecast, currentWeather };
