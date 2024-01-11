@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function TravelToForm() {
   const [isSubmited, setIsSubmited] = useState(false);
+  const [isSubmitButtonClicked, setIsSubmitButtonClicked] = useState(false);
 
   function submitHandler(event) {
     event.preventDefault();
@@ -14,7 +15,7 @@ function TravelToForm() {
 
   return (
     <>
-      <h2 className="pb-6 text-center text-2xl font-bold text-blue-600">
+      <h2 className="pb-4 text-center text-2xl font-bold text-blue-600">
         Fill out the form and tell me where you want me to travel!
       </h2>
       <div className="p-4 text-xl shadow-md">
@@ -41,7 +42,7 @@ function TravelToForm() {
                     type="text"
                     name="city"
                     required
-                    className="w-full rounded bg-blue-50 p-2 text-center outline-blue-600"
+                    className={`w-full rounded bg-blue-50 p-2 text-center ${isSubmitButtonClicked ? "outline-red-600" : "outline-blue-600"}`}
                   ></input>
                 </label>
               </div>
@@ -72,14 +73,15 @@ function TravelToForm() {
           {isSubmited ? (
             <button
               disabled
-              className="mx-auto w-28 rounded border-2 border-green-600 bg-green-600 p-2 text-xl text-white hover:text-white hover:transition-all"
+              className="mx-auto w-28 rounded border-2 border-green-600 bg-green-600 p-2 text-xl text-white"
             >
               Success!
             </button>
           ) : (
             <button
               type="submit"
-              className="mx-auto w-28 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all"
+              onClick={() => setIsSubmitButtonClicked(!isSubmitButtonClicked)}
+              className="mx-auto w-28 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 transition-all hover:bg-blue-600 hover:text-white"
             >
               Submit
             </button>
