@@ -4,6 +4,13 @@ import weatherAPI from "../services/weatherAPI";
 function WeatherWidget({ city }) {
   const [cityData, setCityData] = useState({});
 
+  const isLowestTempEqualToHighestTemp =
+    cityData.currentWeather?.lowestTemp == cityData.currentWeather?.highestTemp;
+
+  const isLastForecastForToday =
+    cityData.currentWeather?.lowestTemp == 999 &&
+    cityData.currentWeather?.highestTemp == -999;
+
   useEffect(() => {
     (async function () {
       const result = await weatherAPI.Query(city);
@@ -13,8 +20,8 @@ function WeatherWidget({ city }) {
 
   return (
     <>
-      <div className="mx-auto w-96 text-xl shadow-inner">
-        <div className="flex place-content-between place-items-center p-4 md:place-content-evenly">
+      <div className="mx-auto w-[19rem] text-xl shadow-inner">
+        <div className="flex place-content-around place-items-center p-4 md:place-content-evenly">
           <img
             src={cityData.currentWeather?.icon}
             alt={cityData.currentWeather?.condition}
@@ -29,17 +36,27 @@ function WeatherWidget({ city }) {
           </div>
           <div>
             <div className="flex items-center gap-1">
-              <i className="fa-solid fa-temperature-arrow-up text-orange-400"></i>
+              {isLowestTempEqualToHighestTemp || isLastForecastForToday ? (
+                ""
+              ) : (
+                <i className="fa-solid fa-temperature-arrow-up text-orange-400"></i>
+              )}
               <h3>
-                {cityData.currentWeather?.highestTemp}
-                ºC
+                {isLowestTempEqualToHighestTemp || isLastForecastForToday
+                  ? ""
+                  : cityData.currentWeather?.highestTemp + "ºC"}
               </h3>
             </div>
             <div className="flex items-center gap-1">
-              <i className="fa-solid fa-temperature-arrow-down text-blue-400"></i>
+              {isLowestTempEqualToHighestTemp || isLastForecastForToday ? (
+                ""
+              ) : (
+                <i className="fa-solid fa-temperature-arrow-down text-blue-400"></i>
+              )}
               <h3>
-                {cityData.currentWeather?.lowestTemp}
-                ºC
+                {isLowestTempEqualToHighestTemp || isLastForecastForToday
+                  ? ""
+                  : cityData.currentWeather?.lowestTemp + "ºC"}
               </h3>
             </div>
           </div>
@@ -48,7 +65,7 @@ function WeatherWidget({ city }) {
           {cityData.forecast?.map((day) => (
             <li
               key={day.name}
-              className="flex place-content-between p-4 hover:bg-slate-50 hover:transition-all md:place-content-evenly"
+              className="flex place-content-between p-4 transition-all hover:bg-blue-50 md:place-content-evenly"
             >
               <h3>{day.name}</h3>
               <p className="flex place-items-center gap-1">
