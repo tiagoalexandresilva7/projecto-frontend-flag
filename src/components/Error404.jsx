@@ -23,7 +23,7 @@ function Error404() {
           <p className="pb-6 text-xl">And... his camera man.</p>
         </div>
         <Link href="/">
-          <button className="w-fit rounded border-2 border-blue-600 p-2 text-xl text-blue-600 hover:scale-105 hover:bg-blue-600 hover:text-white hover:transition-all">
+          <button className="w-fit rounded border-2 border-blue-600 p-2 text-xl text-blue-600 transition-all hover:scale-105 hover:bg-blue-600 hover:text-white">
             Send me back!
           </button>
         </Link>

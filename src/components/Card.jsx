@@ -3,7 +3,7 @@ import { Link } from "wouter";
 function Card({ journey }) {
   return (
     <>
-      <div className="w-80 rounded-2xl shadow-md hover:scale-105 hover:transition-all hover:duration-150 hover:ease-in-out">
+      <div className="w-80 rounded-2xl shadow-md transition-all hover:scale-105 hover:duration-150 hover:ease-in-out">
         <img
           src={journey.cardPreview}
           alt={journey.name}
@@ -22,7 +22,7 @@ function Card({ journey }) {
             </h3>
           </div>
           <Link href={`/journeys/${journey.id}`}>
-            <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all">
+            <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 transition-all hover:bg-blue-600 hover:text-white">
               Visit
             </button>
           </Link>

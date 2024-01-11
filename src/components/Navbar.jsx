@@ -20,17 +20,16 @@ function Navbar() {
     <>
       <header className="fixed z-50 w-full bg-white bg-opacity-80 shadow-lg">
         <nav className="container mx-auto">
-          {/* logo and page title */}
-          <div className="flex place-content-around items-center gap-1 p-4 text-blue-600 drop-shadow">
+          <div className="flex place-content-around items-center gap-1 p-4 text-blue-600 drop-shadow-md">
             <ul>
-              <li className="p-2 hover:cursor-pointer">
+              <li className="cursor-pointer p-2">
                 <Link href="/">
                   <img className="min-w-min" src="\logo.svg" alt="logo" />
                 </Link>
               </li>
             </ul>
             <ul>
-              <li className="p-2 hover:cursor-pointer">
+              <li className="cursor-pointer p-2">
                 <Link href="/">
                   <h1 className="text-2xl">
                     <strong>
@@ -40,10 +39,8 @@ function Navbar() {
                 </Link>
               </li>
             </ul>
-
-            {/* mobile menu */}
             <ul className="flex gap-1 md:hidden">
-              <li className="drop-shadow hover:scale-110 hover:cursor-pointer hover:transition-all hover:duration-300">
+              <li className="cursor-pointer transition-all hover:scale-110">
                 <button className="w-6">
                   <i
                     className="fa-solid fa-bars text-3xl"
@@ -53,20 +50,18 @@ function Navbar() {
                 </button>
               </li>
             </ul>
-
-            {/* desktop links */}
             <ul className="hidden max-w-sm gap-3 whitespace-nowrap text-xl md:flex">
-              <li className="drop-shadow md:hover:scale-105 md:hover:transition-all md:hover:duration-300">
+              <li className="drop-shadow-md transition-all hover:scale-110">
                 <Link href="/">
                   <i className="fa-solid fa-house-flag"></i> Home
                 </Link>
               </li>
-              <li className="drop-shadow md:hover:scale-105 md:hover:transition-all md:hover:duration-300">
+              <li className="drop-shadow-md transition-all hover:scale-110">
                 <Link href="/travelto">
                   <i className="fa-solid fa-map-location-dot"></i> Travel to...
                 </Link>
               </li>
-              <li className="drop-shadow md:hover:scale-105 md:hover:transition-all md:hover:duration-300">
+              <li className="drop-shadow-md transition-all hover:scale-110">
                 <Link href="/about">
                   <i className="fa-solid fa-user-astronaut"></i> About the
                   Tourist
@@ -74,24 +69,22 @@ function Navbar() {
               </li>
             </ul>
           </div>
-
-          {/* mobile menu links */}
           <ul
             className="hidden flex-col items-center gap-2 pb-4 text-blue-600 md:hidden"
             ref={mobileMenu}
           >
-            <li className="drop-shadow hover:scale-110 hover:font-bold hover:transition-all hover:duration-300">
-              <Link href="/" onClick={mobileMenuHandler}>
+            <li className="drop-shadow-md transition-all hover:scale-110">
+              <Link href="/" onClick={mobileMenuHandler} className="p-1">
                 <i className="fa-solid fa-house-flag"></i> Home
               </Link>
             </li>
-            <li className="drop-shadow hover:scale-110 hover:font-bold hover:transition-all hover:duration-300">
-              <Link href="/travelto" onClick={mobileMenuHandler}>
+            <li className="drop-shadow-md transition-all hover:scale-110">
+              <Link href="/travelto" onClick={mobileMenuHandler} className="p-1">
                 <i className="fa-solid fa-map-location-dot"></i> Travel to...
               </Link>
             </li>
-            <li className="drop-shadow hover:scale-110 hover:font-bold hover:transition-all hover:duration-300">
-              <Link href="/about" onClick={mobileMenuHandler}>
+            <li className="drop-shadow-md transition-all hover:scale-110">
+              <Link href="/about" onClick={mobileMenuHandler} className="p-1">
                 <i className="fa-solid fa-user-astronaut"></i> About the Tourist
               </Link>
             </li>

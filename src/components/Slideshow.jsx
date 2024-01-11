@@ -29,22 +29,22 @@ function Slideshow({ images, alt }) {
     <>
       <div className="relative mx-auto mb-4 h-96 overflow-hidden rounded-3xl shadow-md xl:h-[600px] 2xl:h-[800px]">
         <div
-          className="absolute left-6 top-1/2 z-20 cursor-pointer text-6xl text-white hover:scale-125 hover:text-blue-600 hover:transition-all active:transition-all active:duration-75 xl:left-12 xl:text-8xl"
+          className="absolute left-6 top-1/2 z-20 cursor-pointer text-6xl text-white transition hover:ease-out hover:scale-125 hover:text-blue-600 xl:left-12 xl:text-8xl"
           onClick={slideshowPrevious}
         >
           <i className="fa-solid fa-chevron-left"></i>
         </div>
         <div
-          className="absolute right-6 top-1/2 z-20 cursor-pointer text-6xl text-white hover:scale-125 hover:text-blue-600 hover:transition-all active:duration-75 xl:right-12 xl:text-8xl"
+          className="transition hover:ease-out absolute right-6 top-1/2 z-20 cursor-pointer text-6xl text-white hover:scale-125 hover:text-blue-600 xl:right-12 xl:text-8xl"
           onClick={slideshowNext}
         >
           <i className="fa-solid fa-chevron-right"></i>
         </div>
-          <img
-            src={gallery?.[slideshowIndex]}
-            alt={alt}
-            className="zoom z-10 mx-auto h-full w-full shadow-lg"
-          />
+        <img
+          src={gallery?.[slideshowIndex]}
+          alt={alt}
+          className="zoom z-10 mx-auto h-full w-full shadow-lg"
+        />
       </div>
     </>
   );
