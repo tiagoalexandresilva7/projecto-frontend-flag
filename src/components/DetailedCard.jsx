@@ -16,6 +16,10 @@ function DetailedCard({ id }) {
           return journey.id == id;
         });
 
+        if (!foundJourney) {
+          window.location.href = "/notfound";
+        }
+
         setJourney(foundJourney);
       })();
     },
@@ -39,9 +43,9 @@ function DetailedCard({ id }) {
             className="rounded-3xl"
           />
         </div>
-          <p className="pb-4 text-xl">{journey.bestTimeToGo}</p>
-          <div className="pb-4">
-            {journey.name ? <WeatherWidget city={journey.name} /> : null}
+        <p className="pb-4 text-xl">{journey.bestTimeToGo}</p>
+        <div className="pb-4">
+          {journey.name ? <WeatherWidget city={journey.name} /> : null}
         </div>
       </div>
     </>
