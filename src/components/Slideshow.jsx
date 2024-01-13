@@ -13,6 +13,16 @@ function Slideshow({ images, alt }) {
     [images],
   );
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideshowIndex(slideshowIndex + 1);
+      if (slideshowIndex == gallery.length - 1) {
+        setSlideshowIndex(0);
+      }
+    }, 7500);
+    return () => clearInterval(interval);
+  }, [slideshowIndex]);
+
   function slideshowPrevious() {
     const isFirstSlide = slideshowIndex == 0;
     const newSlide = isFirstSlide ? gallery.length - 1 : slideshowIndex - 1;
@@ -25,17 +35,18 @@ function Slideshow({ images, alt }) {
     setSlideshowIndex(newSlide);
   }
 
+
   return (
     <>
       <div className="relative mx-auto mb-4 h-96 overflow-hidden rounded-3xl shadow-md xl:h-[600px] 2xl:h-[800px]">
         <div
-          className="absolute left-6 top-1/2 z-20 cursor-pointer text-6xl text-white transition hover:ease-out hover:scale-125 hover:text-blue-600 xl:left-12 xl:text-8xl"
+          className="absolute left-6 top-1/2 z-20 cursor-pointer text-6xl text-white transition hover:scale-125 hover:text-blue-600 hover:ease-out xl:left-12 xl:text-8xl"
           onClick={slideshowPrevious}
         >
           <i className="fa-solid fa-chevron-left"></i>
         </div>
         <div
-          className="transition hover:ease-out absolute right-6 top-1/2 z-20 cursor-pointer text-6xl text-white hover:scale-125 hover:text-blue-600 xl:right-12 xl:text-8xl"
+          className="absolute right-6 top-1/2 z-20 cursor-pointer text-6xl text-white transition hover:scale-125 hover:text-blue-600 hover:ease-out xl:right-12 xl:text-8xl"
           onClick={slideshowNext}
         >
           <i className="fa-solid fa-chevron-right"></i>
