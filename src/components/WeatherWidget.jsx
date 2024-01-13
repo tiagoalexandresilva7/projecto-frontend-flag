@@ -44,7 +44,7 @@ function WeatherWidget({ city }) {
               <h3>
                 {isLowestTempEqualToHighestTemp || isLastForecastForToday
                   ? ""
-                  : cityData.currentWeather?.highestTemp + "ºC"}
+                  : `${cityData.currentWeather?.highestTemp}ºC`}
               </h3>
             </div>
             <div className="flex items-center gap-1">
@@ -56,7 +56,7 @@ function WeatherWidget({ city }) {
               <h3>
                 {isLowestTempEqualToHighestTemp || isLastForecastForToday
                   ? ""
-                  : cityData.currentWeather?.lowestTemp + "ºC"}
+                  : `${cityData.currentWeather?.lowestTemp}ºC`}
               </h3>
             </div>
           </div>
@@ -70,11 +70,11 @@ function WeatherWidget({ city }) {
               <h3>{day.name}</h3>
               <p className="flex place-items-center gap-1">
                 <i className="fa-solid fa-temperature-arrow-up text-orange-400"></i>
-                {day.highestTemp}ºC
+                {`${day.highestTemp}ºC`}
               </p>
               <p className="flex place-items-center gap-1">
                 <i className="fa-solid fa-temperature-arrow-down text-blue-400"></i>
-                {day.lowestTemp}ºC
+                {`${day.lowestTemp}ºC`}
               </p>
             </li>
           ))}
