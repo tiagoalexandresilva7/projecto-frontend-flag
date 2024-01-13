@@ -1,7 +1,6 @@
 function About() {
   return (
     <>
-      <main>
         <div className="h-screen overflow-hidden shadow-xl">
           <img
             src="https://koreus.cdn.li/media/201709/pilote-avion-selfie.jpg"
@@ -40,7 +39,6 @@ function About() {
           <p>Happy travels and happy coding!</p>
           <p className="pb-4">Tiago</p>
         </section>
-      </main>
     </>
   );
 }
