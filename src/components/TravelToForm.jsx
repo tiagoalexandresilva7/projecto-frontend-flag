@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 function TravelToForm() {
   const [isSubmited, setIsSubmited] = useState(false);
   const [isSubmitButtonClicked, setIsSubmitButtonClicked] = useState(false);
+  const requiredField = useRef()
 
   function submitHandler(event) {
     event.preventDefault();
@@ -18,10 +19,10 @@ function TravelToForm() {
       <h2 className="pb-4 text-center text-2xl font-bold text-blue-600">
         Fill out the form and tell me where you want me to travel!
       </h2>
-      <div className="p-4 text-xl shadow-md">
+      <section className="p-4 text-xl shadow-md">
         <form
           onSubmit={submitHandler}
-          className="mx-auto flex flex-col place-content-center gap-4 rounded-2xl pb-4 text-center"
+          className="mx-auto flex flex-col place-content-center gap-4 rounded-2xl pb-4 text-center "
         >
           <div className="gap-8 md:flex md:flex-row">
             <div className="flex flex-col gap-2">
@@ -39,12 +40,16 @@ function TravelToForm() {
                 <label>
                   Where do you think I should visit?
                   <input
+                    ref={requiredField}
+                    placeholder={
+                      isSubmitButtonClicked ? "*required" : null
+                    }
                     type="text"
                     name="city"
                     required
                     className={`w-full rounded bg-blue-50 p-2 text-center ${
                       isSubmitButtonClicked
-                        ? "outline-red-600"
+                        ? "outline-red-600 placeholder:text-xs placeholder:text-red-600 placeholder:italic"
                         : "outline-blue-600"
                     }`}
                   ></input>
@@ -56,7 +61,7 @@ function TravelToForm() {
                   <input
                     type="date"
                     name="date"
-                    className="w-full rounded bg-blue-50 p-2 text-center text-slate-400 outline-blue-600"
+                    className="w-full rounded bg-blue-50 p-2 text-center outline-blue-600"
                   ></input>
                 </label>
               </div>
@@ -96,7 +101,7 @@ function TravelToForm() {
             </p>
           ) : null}
         </form>
-      </div>
+      </section>
     </>
   );
 }

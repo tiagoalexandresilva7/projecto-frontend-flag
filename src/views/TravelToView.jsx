@@ -3,11 +3,9 @@ import TravelToForm from "../components/TravelToForm";
 function TravelToView() {
   return (
     <>
-      <main className="pt-24 shadow-inner">
-        <div className="mx-auto max-w-screen-md p-4">
+        <main className="mx-auto max-w-screen-md px-4 pt-28 pb-4">
           <TravelToForm />
-        </div>
-      </main>
+        </main>
     </>
   );
 }
