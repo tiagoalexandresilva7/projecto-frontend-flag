@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
 import Slideshow from "./Slideshow";
 import WeatherWidget from "./WeatherWidget";
+import MapWidget from "./MapWidget";
 
 function DetailedCard({ id }) {
   const [journey, setJourney] = useState({});
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(
     function () {
@@ -28,26 +33,24 @@ function DetailedCard({ id }) {
 
   return (
     <>
-      <div className="container mx-auto">
+      <section>
         <Slideshow images={journey.imageGallery} alt={journey.name} />
-      </div>
-      <div className="container mx-auto">
-        <div className="pb-4 text-center text-2xl font-semibold text-blue-600">
-          <h2>{journey.name}</h2>
-        </div>
+      </section>
+      <article>
+        <h2 className="pb-4 text-center text-2xl font-semibold text-blue-600">
+          {journey.name}
+        </h2>
         <p className="pb-4 text-xl">{journey.description}</p>
-        <div className="pb-4">
-          <img
-            src="https://i.redd.it/k1uzwu8wwuv01.png"
-            alt="map placeholder"
-            className="rounded-3xl"
-          />
-        </div>
+        <section className="pb-4">
+          {journey.name && journey.source ? (
+            <MapWidget city={journey.name} source={journey.source} />
+          ) : null}
+        </section>
         <p className="pb-4 text-xl">{journey.bestTimeToGo}</p>
-        <div className="pb-4">
+        <section className="pb-4">
           {journey.name ? <WeatherWidget city={journey.name} /> : null}
-        </div>
-      </div>
+        </section>
+      </article>
     </>
   );
 }
