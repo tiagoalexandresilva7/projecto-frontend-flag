@@ -35,26 +35,25 @@ function Slideshow({ images, alt }) {
     setSlideshowIndex(newSlide);
   }
 
-
   return (
     <>
-      <div className="relative mx-auto mb-4 h-96 overflow-hidden rounded-3xl shadow-md xl:h-[600px] 2xl:h-[800px]">
-        <div
+      <div className="relative mb-4 h-96 overflow-hidden rounded-3xl shadow-md xl:h-[600px] 2xl:h-[800px]">
+        <button
           className="absolute left-6 top-1/2 z-20 cursor-pointer text-6xl text-white transition hover:scale-125 hover:text-blue-600 hover:ease-out xl:left-12 xl:text-8xl"
           onClick={slideshowPrevious}
         >
           <i className="fa-solid fa-chevron-left"></i>
-        </div>
-        <div
+        </button>
+        <button
           className="absolute right-6 top-1/2 z-20 cursor-pointer text-6xl text-white transition hover:scale-125 hover:text-blue-600 hover:ease-out xl:right-12 xl:text-8xl"
           onClick={slideshowNext}
         >
           <i className="fa-solid fa-chevron-right"></i>
-        </div>
+        </button>
         <img
           src={gallery?.[slideshowIndex]}
           alt={alt}
-          className="zoom z-10 mx-auto h-full w-full shadow-lg"
+          className="zoom z-10 h-full w-full shadow-lg"
         />
       </div>
     </>

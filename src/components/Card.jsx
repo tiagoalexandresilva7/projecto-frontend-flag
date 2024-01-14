@@ -10,8 +10,8 @@ function Card({ journey }) {
           className="h-64 rounded-md shadow-sm"
         />
         <div className="flex flex-col items-center p-4">
-          <div className="text-center text-xl font-semibold text-blue-600 lg:pb-2 lg:text-2xl">
-            <h2 className="pb-1 lg:pb-2 ">{journey.name}</h2>
+          <hgroup className="text-center text-xl font-semibold text-blue-600 lg:pb-2 lg:text-2xl">
+            <h2 className="pb-1 lg:pb-2">{journey.name}</h2>
             <h3 className="text-lg">
               <i className="fa-solid fa-plane-departure pr-1"></i>
               {journey.dateDeparture}
@@ -20,7 +20,7 @@ function Card({ journey }) {
               <i className="fa-solid fa-plane-arrival pr-1"></i>
               {journey.dateArrival}
             </h3>
-          </div>
+          </hgroup>
           <Link href={`/journeys/${journey.id}`}>
             <button className="w-6/12 rounded border-2 border-blue-600 p-2 text-xl text-blue-600 transition-all hover:bg-blue-600 hover:text-white">
               Visit

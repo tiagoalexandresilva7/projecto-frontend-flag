@@ -8,10 +8,8 @@ function AboutView() {
 
   return (
     <>
-      <main className="shadow-inner">
-        <div className="container mx-auto">
+      <main className="container mx-auto">
           <About />
-        </div>
       </main>
     </>
   );
