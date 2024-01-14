@@ -1,3 +1,20 @@
+.leaflet-container {
+  height: 24rem;
+  z-index: 1;
+}
+
+@media (min-width: 1280px) {
+  .leaflet-container {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1536px) {
+    .leaflet-container {
+        height: 700px;
+    }
+}
+
 .zoom {
   animation: scale 60s linear infinite;
 }
