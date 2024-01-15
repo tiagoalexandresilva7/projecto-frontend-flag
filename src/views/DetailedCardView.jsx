@@ -8,7 +8,7 @@ function DetailedCardView({ id }) {
 
   return (
     <>
-      <main className="container mx-auto px-4 pt-28">
+      <main className="mx-auto bg-midnight-blue">
         <DetailedCard id={id} />
       </main>
     </>

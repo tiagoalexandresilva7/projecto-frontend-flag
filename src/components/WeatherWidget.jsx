@@ -20,8 +20,8 @@ function WeatherWidget({ city }) {
 
   return (
     <>
-      <table className="mx-auto w-[19rem] text-xl shadow-inner">
-        <thead className="flex place-content-around pt-4">
+      <table className="text-asphalt mx-auto w-[19rem] text-xl  shadow-inner bg-shadow-grey">
+        <thead className="flex place-content-around">
           <tr>
             <th>
               <img
