@@ -20,7 +20,7 @@ function Footer() {
             </a>
           </li>
         </ul>
-        <div className="text-lg text-primary">
+        <div className="text-lg text-secondary">
           <i className="fa-regular fa-copyright mr-2 pb-2 drop-shadow"></i>
           {`Tiago
           Silva ${new Date().getFullYear()}`}
