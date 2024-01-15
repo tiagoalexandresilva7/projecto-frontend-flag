@@ -20,10 +20,10 @@ function WeatherWidget({ city }) {
 
   return (
     <>
-      <table className="text-asphalt mx-auto w-[19rem] text-xl  shadow-inner bg-shadow-grey">
+      <table className="text-secondary bg-primary mx-auto w-[19rem] text-xl">
         <thead className="flex place-content-around">
           <tr>
-            <th>
+            <th className="pt-4">
               <img
                 src={cityData.currentWeather?.icon}
                 alt={cityData.currentWeather?.condition}

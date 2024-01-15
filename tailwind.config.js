@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        "midnight-blue": "#1B262C",
-        charcoal: "#0F4C75",
-        asphalt: "#3282B8",
-        "shadow-grey": "#BBE1FA",
+        primary: "#526D82", // navbar, hero, footer
+        secondary: "#9DB2BF", // cards
+        accent: "#DDE6ED", // buttons, links
+        background: "#27374D",
       },
     },
   },

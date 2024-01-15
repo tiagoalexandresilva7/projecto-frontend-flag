@@ -18,9 +18,9 @@ function Navbar() {
 
   return (
     <>
-      <header className="fixed z-50 w-full bg-midnight-blue bg-opacity-80 shadow-lg">
+      <header className="fixed z-50 w-full bg-primary bg-opacity-80 shadow-lg">
         <nav className="mx-auto container">
-          <ul className="flex place-content-around items-center gap-1 p-4 text-shadow-grey drop-shadow-md">
+          <ul className="flex place-content-around items-center gap-1 p-4 text-accent drop-shadow-md">
             <li className="cursor-pointer p-2">
               <Link href="/">
                 <img className="min-w-min" src="\logo.svg" alt="logo" />
@@ -65,7 +65,7 @@ function Navbar() {
             </ul>
           </ul>
           <ul
-            className="hidden flex-col items-center gap-2 pb-4 text-shadow-grey xl:hidden"
+            className="hidden flex-col items-center gap-2 pb-4 text-accent xl:hidden"
             ref={mobileMenu}
           >
             <li className="drop-shadow-md transition-all hover:scale-110">

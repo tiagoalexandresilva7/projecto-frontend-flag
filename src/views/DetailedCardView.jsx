@@ -8,7 +8,7 @@ function DetailedCardView({ id }) {
 
   return (
     <>
-      <main className="mx-auto bg-midnight-blue">
+      <main className="mx-auto bg-background">
         <DetailedCard id={id} />
       </main>
     </>
