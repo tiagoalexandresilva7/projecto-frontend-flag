@@ -1,7 +1,7 @@
 function About() {
   return (
     <>
-      <section className="pt-28 xl:flex px-4">
+      <section className="px-4 pt-28 xl:flex">
         <figure className="mx-auto h-96 overflow-hidden shadow-xl md:h-[450px] lg:h-[550px]">
           <img
             src="https://koreus.cdn.li/media/201709/pilote-avion-selfie.jpg"
@@ -9,7 +9,7 @@ function About() {
             className="zoom h-full w-full"
           />
         </figure>
-        <article className="pt-4 text-xl xl:w-3/5 xl:pt-0">
+        <article className="pt-4 text-xl xl:w-3/5 xl:pl-4 xl:pt-0">
           <p>
             Hi! I'm Tiago, a travel lover and a aspiring programmer. I have a
             passion for learning new things and having new adventures.
