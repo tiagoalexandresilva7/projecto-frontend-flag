@@ -20,8 +20,8 @@ function Footer() {
             </a>
           </li>
         </ul>
-        <div className="text-lg text-secondary">
-          <i className="fa-regular fa-copyright mr-2 pb-2 drop-shadow"></i>
+        <div className="text-lg text-textcolor">
+          <i className="fa-regular fa-copyright mr-2 pb-2 drop-shadow text-accent"></i>
           {`Tiago
           Silva ${new Date().getFullYear()}`}
           <p>All information and images are illustrative</p>

@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#393E46", // navbar, hero, footer
-        secondary: "#00ADB5", // cards
-        accent: "#EEEEEE", // buttons, links
-        background: "#222831",
+        primary: "#424769",
+        secondary: "#7077A1",
+        accent: "#F6B17A",
+        background: "#2D3250",
+        textcolor: "#FDE0CB",
       },
     },
   },

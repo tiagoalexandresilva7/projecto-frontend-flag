@@ -41,13 +41,13 @@ function DetailedCard({ id }) {
           <h2 className="text-accent pb-4 text-center text-2xl font-semibold">
             {journey.name}
           </h2>
-          <p className="text-secondary pb-4 text-xl">{journey.description}</p>
+          <p className="text-textcolor pb-4 text-xl">{journey.description}</p>
           <section className="pb-4">
             {journey.name && journey.source ? (
               <MapWidget city={journey.name} source={journey.source} />
             ) : null}
           </section>
-          <p className="text-secondary pb-4 text-xl">{journey.bestTimeToGo}</p>
+          <p className="text-textcolor pb-4 text-xl">{journey.bestTimeToGo}</p>
           <section className="pb-4">
             {journey.name ? <WeatherWidget city={journey.name} /> : null}
           </section>

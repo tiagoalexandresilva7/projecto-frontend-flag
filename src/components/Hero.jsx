@@ -7,8 +7,8 @@ function Hero() {
           alt="hero"
           className="zoom min-h-screen w-full"
         />
-        <hgroup className="text-accent absolute text-center">
-          <h2 className="pb-3 text-3xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] lg:text-4xl">
+        <hgroup className="absolute text-center text-accent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h2 className="pb-3 text-3xl lg:text-4xl">
             <em>The journey is the</em>
           </h2>
           <h2 className="pb-10">
@@ -17,8 +17,8 @@ function Hero() {
             </em>
           </h2>
           <a href="#Journeys">
-            <button className="w-fit rounded bg-primary p-2 text-xl transition-all hover:scale-105">
-              Check my journeys
+            <button className="w-fit rounded border-2 border-accent bg-primary p-2 text-xl transition hover:scale-105 hover:bg-accent hover:text-background">
+              Check mine!
             </button>
           </a>
         </hgroup>

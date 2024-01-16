@@ -9,7 +9,7 @@ function About() {
             className="zoom h-full w-full"
           />
         </figure>
-        <article className="pt-4 text-xl xl:w-3/5 xl:pl-4 xl:pt-0 text-secondary">
+        <article className="pt-4 text-xl xl:w-3/5 xl:pl-4 xl:pt-0 text-textcolor">
           <p>
             Hi! I'm Tiago, a travel lover and a aspiring programmer. I have a
             passion for learning new things and having new adventures.

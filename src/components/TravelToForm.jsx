@@ -26,18 +26,18 @@ function TravelToForm() {
         >
           <div className="gap-8 md:flex md:flex-row">
             <div className="flex flex-col gap-2">
-              <div className="flex flex-col">
-                <label className="text-secondary">
+              <div className="flex flex-col pb-4">
+                <label className="text-textcolor">
                   What's your name?
                   <input
                     type="text"
                     name="name"
-                    className="w-full rounded p-2 text-center text-black outline-none"
+                    className="text-textcolor border-accent w-full border-b-2 bg-transparent pt-2 text-center outline-0"
                   ></input>
                 </label>
               </div>
-              <div className="flex w-full flex-col">
-                <label className="text-secondary">
+              <div className="flex w-full flex-col pb-4">
+                <label className="text-textcolor">
                   Where do you think I should visit?
                   <input
                     ref={requiredField}
@@ -45,34 +45,34 @@ function TravelToForm() {
                     type="text"
                     name="city"
                     required
-                    className={`w-full rounded p-2 text-center outline-none text-black ${
+                    className={`text-textcolor border-accent w-full border-b-2 bg-transparent pt-2 text-center outline-0 ${
                       isSubmitButtonClicked
-                        ? "outline-red-600 placeholder:text-xs placeholder:italic placeholder:text-red-600"
-                        : "outline-none"
+                        ? "border-red-600 placeholder:text-xs placeholder:italic placeholder:text-red-600"
+                        : null
                     }`}
                   ></input>
                 </label>
               </div>
-              <div className="flex w-full flex-col pb-2">
-                <label className="text-secondary">
+              <div className="flex w-full flex-col pb-4">
+                <label className="text-textcolor">
                   And when?
                   <input
                     type="date"
                     name="date"
-                    className="w-full rounded p-2 text-center outline-none cursor-text text-black"
+                    className="text-textcolor border-accent w-full cursor-text border-b-2 bg-transparent p-1 text-center outline-0 block"
                   ></input>
                 </label>
               </div>
             </div>
             <div className="flex flex-col">
-              <label className="text-secondary">
-                Any particular point of interest?
+              <label className="text-textcolor">
+                <p className="pb-1">Any particular point of interest?</p>
                 <textarea
                   name="message"
                   rows="7"
                   cols="30"
                   placeholder="A restaurant or museum"
-                  className="outline-none placeholder:text-secondary w-full rounded p-2 text-center text-black"
+                  className="text-textcolor rounded border-accent w-full border-2 bg-transparent p-2 text-center outline-0"
                 ></textarea>
               </label>
             </div>
@@ -94,7 +94,7 @@ function TravelToForm() {
             </button>
           )}
           {isSubmited ? (
-            <p className="text-secondary mt-2 text-xs italic">
+            <p className="text-textcolor mt-2 text-xs italic">
               *Check the console
             </p>
           ) : null}
