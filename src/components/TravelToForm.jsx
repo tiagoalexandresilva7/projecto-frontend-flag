@@ -3,20 +3,23 @@ import { useRef, useState } from "react";
 function TravelToForm() {
   const [isSubmited, setIsSubmited] = useState(false);
   const [isSubmitButtonClicked, setIsSubmitButtonClicked] = useState(false);
-  const requiredField = useRef()
+
+  const requiredField = useRef();
+  const isRequiredFieldEmpty = requiredField.current?.value == "";
 
   function submitHandler(event) {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
     const formObj = Object.fromEntries(formData.entries());
-    setIsSubmited(true);
+    setIsSubmited(!isSubmited);
+    form.reset();
     console.log(formObj); // needed
   }
 
   return (
     <>
-      <h2 className="text-accent pb-4 text-center text-2xl font-bold">
+      <h2 className="pb-4 text-center text-2xl font-bold text-accent">
         Fill out the form and tell me where you want me to travel!
       </h2>
       <section className="flex place-content-center p-4 text-xl">
@@ -32,7 +35,7 @@ function TravelToForm() {
                   <input
                     type="text"
                     name="name"
-                    className="text-textcolor border-accent w-full border-b-2 bg-transparent pt-2 text-center outline-0"
+                    className="w-full border-b-2 border-accent bg-transparent pt-2 text-center text-textcolor outline-0"
                   ></input>
                 </label>
               </div>
@@ -45,8 +48,8 @@ function TravelToForm() {
                     type="text"
                     name="city"
                     required
-                    className={`text-textcolor border-accent w-full border-b-2 bg-transparent pt-2 text-center outline-0 ${
-                      isSubmitButtonClicked
+                    className={`w-full border-b-2 border-accent bg-transparent pt-2 text-center text-textcolor outline-0 ${
+                      isSubmitButtonClicked && isRequiredFieldEmpty
                         ? "border-red-600 placeholder:text-xs placeholder:italic placeholder:text-red-600"
                         : null
                     }`}
@@ -59,7 +62,7 @@ function TravelToForm() {
                   <input
                     type="date"
                     name="date"
-                    className="text-textcolor border-accent w-full cursor-text border-b-2 bg-transparent p-1 text-center outline-0 block"
+                    className="block w-full cursor-text border-b-2 border-accent bg-transparent p-1 text-center text-textcolor outline-0"
                   ></input>
                 </label>
               </div>
@@ -72,32 +75,32 @@ function TravelToForm() {
                   rows="7"
                   cols="30"
                   placeholder="A restaurant or museum"
-                  className="text-textcolor rounded border-accent w-full border-2 bg-transparent p-2 text-center outline-0"
+                  className="w-full rounded border-2 border-accent bg-transparent p-2 text-center text-textcolor outline-0"
                 ></textarea>
               </label>
             </div>
           </div>
           {isSubmited ? (
-            <button
-              disabled
-              className="mx-auto w-28 rounded border-2 border-green-600 bg-green-600 p-2 text-xl text-white"
-            >
-              Success*
-            </button>
+            <>
+              <button
+                disabled
+                className="mx-auto w-28 rounded border-2 border-green-600 bg-green-600 p-2 text-xl text-white"
+              >
+                Success*
+              </button>
+              <p className="mt-2 text-xs italic text-textcolor">
+                *Check the console
+              </p>
+            </>
           ) : (
             <button
               type="submit"
               onClick={() => setIsSubmitButtonClicked(!isSubmitButtonClicked)}
-              className="border-accent text-accent hover:bg-accent hover:text-background mx-auto w-28 rounded border-2 p-2 text-xl transition"
+              className="mx-auto w-28 rounded border-2 border-accent p-2 text-xl text-accent transition hover:bg-accent hover:text-background"
             >
               Submit
             </button>
           )}
-          {isSubmited ? (
-            <p className="text-textcolor mt-2 text-xs italic">
-              *Check the console
-            </p>
-          ) : null}
         </form>
       </section>
     </>
