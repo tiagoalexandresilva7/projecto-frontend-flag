@@ -33,24 +33,26 @@ function DetailedCard({ id }) {
 
   return (
     <>
-      <section>
-        <Slideshow images={journey.imageGallery} alt={journey.name} />
+      <section className="container mx-auto px-4 pt-28">
+        <section>
+          <Slideshow images={journey.imageGallery} alt={journey.name} />
+        </section>
+        <article>
+          <h2 className="text-accent pb-4 text-center text-2xl font-semibold">
+            {journey.name}
+          </h2>
+          <p className="text-textcolor pb-4 text-xl">{journey.description}</p>
+          <section className="pb-4">
+            {journey.name && journey.source ? (
+              <MapWidget city={journey.name} source={journey.source} />
+            ) : null}
+          </section>
+          <p className="text-textcolor pb-4 text-xl">{journey.bestTimeToGo}</p>
+          <section className="pb-4">
+            {journey.name ? <WeatherWidget city={journey.name} /> : null}
+          </section>
+        </article>
       </section>
-      <article>
-        <h2 className="pb-4 text-center text-2xl font-semibold text-blue-600">
-          {journey.name}
-        </h2>
-        <p className="pb-4 text-xl">{journey.description}</p>
-        <section className="pb-4">
-          {journey.name && journey.source ? (
-            <MapWidget city={journey.name} source={journey.source} />
-          ) : null}
-        </section>
-        <p className="pb-4 text-xl">{journey.bestTimeToGo}</p>
-        <section className="pb-4">
-          {journey.name ? <WeatherWidget city={journey.name} /> : null}
-        </section>
-      </article>
     </>
   );
 }

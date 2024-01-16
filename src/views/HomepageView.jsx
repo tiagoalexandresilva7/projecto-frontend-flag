@@ -37,10 +37,10 @@ function HomepageView() {
 
   return (
     <>
-      <main>
+      <main className="bg-background">
           <Hero />
         <h1
-          className="scroll-mt-28 pb-6 pt-8 text-center text-2xl font-bold text-blue-600 md:text-3xl lg:text-4xl"
+          className="scroll-mt-28 pb-6 pt-8 text-center text-2xl font-bold text-accent md:text-3xl lg:text-4xl"
           id="Journeys"
         >
           Journeys

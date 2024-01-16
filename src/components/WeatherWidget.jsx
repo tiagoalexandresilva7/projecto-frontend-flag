@@ -20,9 +20,9 @@ function WeatherWidget({ city }) {
 
   return (
     <>
-      <table className="mx-auto w-[19rem] text-xl shadow-inner">
-        <thead className="flex place-content-around pt-4">
-          <tr>
+      <table className="text-textcolor bg-primary mx-auto w-[19rem] text-xl">
+        <thead className="flex text-accent place-content-center hover:bg-secondary pt-1">
+          <tr className="">
             <th>
               <img
                 src={cityData.currentWeather?.icon}
@@ -40,7 +40,7 @@ function WeatherWidget({ city }) {
               </h3>
             </th>
             {isLowestTempEqualToHighestTemp || isLastForecastForToday ? null : (
-              <th>
+              <th className="text-textcolor">
                 <div className="flex items-center">
                   <i
                     className="fa-solid fa-temperature-arrow-up mr-1 text-orange-400"
@@ -67,7 +67,7 @@ function WeatherWidget({ city }) {
           {cityData.forecast?.map((day) => (
             <tr
               key={day.name}
-              className="flex place-content-between p-4 transition-all hover:bg-blue-50 md:place-content-evenly"
+              className="flex place-content-between p-4 transition hover:bg-secondary"
             >
               <td>{day.name}</td>
               <td>

@@ -8,8 +8,8 @@ function AboutView() {
 
   return (
     <>
-      <main className="container mx-auto">
-          <About />
+      <main className="bg-background xl:min-h-[80vh] 2xl:min-h-[85vh]">
+        <About />
       </main>
     </>
   );

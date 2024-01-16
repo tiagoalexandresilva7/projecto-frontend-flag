@@ -26,7 +26,7 @@ function Error404() {
             are lost — even in space!
           </p>
           <Link href="/">
-            <button className="mx-auto w-fit rounded border-2 border-blue-600 p-2 text-xl text-blue-600 transition-all hover:bg-blue-600 hover:text-white">
+            <button className="mx-auto w-fit rounded border-2 border-blue-600 p-2 text-xl text-blue-600 transition hover:bg-blue-600 hover:text-white">
               Travel home
             </button>
           </Link>

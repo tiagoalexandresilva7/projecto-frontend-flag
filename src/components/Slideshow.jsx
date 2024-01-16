@@ -37,15 +37,15 @@ function Slideshow({ images, alt }) {
 
   return (
     <>
-      <div className="relative mb-4 h-96 overflow-hidden rounded-3xl shadow-md xl:h-[600px] 2xl:h-[800px]">
+      <div className="relative mb-4 h-96 overflow-hidden rounded-3xl shadow-md xl:h-[600px] 2xl:h-[800px] text-textcolor">
         <button
-          className="absolute left-6 top-1/2 z-20 cursor-pointer text-6xl text-white transition hover:scale-125 hover:text-blue-600 hover:ease-out xl:left-12 xl:text-8xl"
+          className="absolute left-6 top-1/2 z-20 cursor-pointer text-6xl transition hover:scale-125 hover:text-accent hover:ease-out xl:left-12 xl:text-8xl"
           onClick={slideshowPrevious}
         >
           <i className="fa-solid fa-chevron-left"></i>
         </button>
         <button
-          className="absolute right-6 top-1/2 z-20 cursor-pointer text-6xl text-white transition hover:scale-125 hover:text-blue-600 hover:ease-out xl:right-12 xl:text-8xl"
+          className="absolute right-6 top-1/2 z-20 cursor-pointer text-6xl transition hover:scale-125 hover:text-accent hover:ease-out xl:right-12 xl:text-8xl"
           onClick={slideshowNext}
         >
           <i className="fa-solid fa-chevron-right"></i>

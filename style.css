@@ -3,6 +3,10 @@
   z-index: 1;
 }
 
+.leaflet-marker {
+  color: white
+}
+
 @media (min-width: 1280px) {
   .leaflet-container {
     height: 500px;
