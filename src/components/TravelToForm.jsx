@@ -44,12 +44,14 @@ function TravelToForm() {
                   Where do you think I should visit?
                   <input
                     ref={requiredField}
-                    placeholder={isSubmitButtonClicked ? "required" : null}
+                    placeholder={
+                      isRequiredFieldEmpty && !isSubmited ? "required" : null
+                    }
                     type="text"
                     name="city"
                     required
                     className={`w-full border-b-2 border-accent bg-transparent pt-2 text-center text-textcolor outline-0 ${
-                      isSubmitButtonClicked && isRequiredFieldEmpty
+                      isRequiredFieldEmpty && !isSubmited
                         ? "border-red-600 placeholder:text-xs placeholder:italic placeholder:text-red-600"
                         : null
                     }`}
