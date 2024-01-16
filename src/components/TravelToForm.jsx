@@ -98,7 +98,7 @@ function TravelToForm() {
             <button
               type="submit"
               onClick={() => setIsSubmitButtonClicked(!isSubmitButtonClicked)}
-              className="mx-auto w-28 rounded border-2 border-accent p-2 text-xl text-accent transition hover:bg-accent hover:text-background"
+              className="mx-auto w-28 rounded border-2 border-accent p-2 text-xl text-accent transition hover:bg-accent hover:text-primary hover:scale-105"
             >
               Submit
             </button>

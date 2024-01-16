@@ -22,7 +22,7 @@ function Card({ journey }) {
             </h3>
           </hgroup>
           <Link href={`/journeys/${journey.id}`}>
-            <button className="w-6/12 rounded border-2 border-accent p-2 text-xl text-accent transition hover:bg-accent hover:text-background">
+            <button className="w-6/12 rounded border-2 border-accent p-2 text-xl text-accent transition hover:bg-accent hover:text-primary bg-background">
               Visit
             </button>
           </Link>

@@ -17,7 +17,7 @@ function Hero() {
             </em>
           </h2>
           <a href="#Journeys">
-            <button className="w-fit rounded border-2 border-accent bg-primary p-2 text-xl transition hover:scale-105 hover:bg-accent hover:text-background">
+            <button className="w-fit rounded border-2 border-accent bg-background p-2 text-xl transition hover:scale-105 hover:bg-accent hover:text-primary">
               Check mine!
             </button>
           </a>
