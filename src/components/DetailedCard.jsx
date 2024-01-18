@@ -21,9 +21,7 @@ function DetailedCard({ id }) {
           return journey.id == id;
         });
 
-        if (!foundJourney) {
-          window.location.href = "/notfound";
-        }
+        {!foundJourney ? window.location.href = "/notfound" : null}
 
         setJourney(foundJourney);
       })();

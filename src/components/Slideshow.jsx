@@ -15,10 +15,9 @@ function Slideshow({ images, alt }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      const isLastSlide = slideshowIndex == gallery.length - 1;
       setSlideshowIndex(slideshowIndex + 1);
-      if (slideshowIndex == gallery.length - 1) {
-        setSlideshowIndex(0);
-      }
+      isLastSlide ? setSlideshowIndex(0) : null;
     }, 7500);
     return () => clearInterval(interval);
   }, [slideshowIndex]);

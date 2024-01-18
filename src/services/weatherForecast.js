@@ -47,8 +47,8 @@ let currentWeather = {
   temp: null,
   lowestTemp: 999,
   highestTemp: -999,
-  condition: "",
-  icon: "",
+  condition: null,
+  icon: null,
   time: new Date().getDay(),
 };
 
