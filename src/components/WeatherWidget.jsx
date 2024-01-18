@@ -20,9 +20,9 @@ function WeatherWidget({ city }) {
 
   return (
     <>
-      <table className="text-textcolor bg-primary mx-auto w-[19rem] text-xl">
-        <thead className="flex text-accent place-content-center hover:bg-secondary pt-1">
-          <tr className="">
+      <table className="mx-auto w-[19rem] bg-primary text-xl text-textcolor">
+        <thead className="flex place-content-center pt-1 text-accent hover:bg-secondary">
+          <tr>
             <th>
               <img
                 src={cityData.currentWeather?.icon}
@@ -32,8 +32,7 @@ function WeatherWidget({ city }) {
             </th>
             <th className="text-center">
               <h3 className="mr-2 font-semibold">
-                {cityData.currentWeather?.temp}
-                ºC
+                {`${cityData.currentWeather?.temp}ºC`}
               </h3>
               <h3 className="mr-2 font-semibold">
                 {cityData.currentWeather?.condition}
