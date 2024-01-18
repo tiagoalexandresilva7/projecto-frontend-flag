@@ -8,7 +8,7 @@ function AboutView() {
 
   return (
     <>
-      <main className="bg-background xl:min-h-[80vh] 2xl:min-h-[85vh]">
+      <main className="bg-background min-h-screen">
         <About />
       </main>
     </>

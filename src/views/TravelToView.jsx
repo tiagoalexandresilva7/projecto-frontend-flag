@@ -8,7 +8,7 @@ function TravelToView() {
 
   return (
     <>
-      <main className="bg-background px-4 pt-28 md:h-[75vh] xl:h-[80vh] 2xl:h-[85vh]">
+      <main className="bg-background px-4 pt-28 min-h-screen">
         <div className="container mx-auto">
           <TravelToForm />
         </div>

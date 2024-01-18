@@ -9,7 +9,7 @@ function Error404View() {
 
   return (
     <>
-      <main className="pt-24 bg-background md:h-[75vh] xl:h-[80vh] 2xl:h-[85vh]">
+      <main className="pt-24 bg-background min-h-screen">
           <Error404 />
       </main>
     </>
